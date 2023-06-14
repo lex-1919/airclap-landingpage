@@ -26,8 +26,8 @@
 .component-text {
   color: var(--dl-color-gray-white);
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
-  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-weight: 600;
 }
 .component-image1 {
   width: var(--dl-size-size-16);
