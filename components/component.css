@@ -1,4 +1,4 @@
-.component-container {
+.app-component-container {
   gap: var(--dl-space-space-16);
   display: flex;
   position: relative;
@@ -6,40 +6,40 @@
   align-items: center;
   justify-content: flex-start;
 }
-.component-image {
+.app-component-image {
   width: 56px;
   object-fit: cover;
 }
-.component-container1 {
+.app-component-container1 {
   gap: var(--dl-space-space-4);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.component-container2 {
+.app-component-container2 {
   gap: var(--dl-space-space-4);
   display: flex;
   align-self: flex-start;
   align-items: center;
   justify-content: flex-start;
 }
-.component-text {
+.app-component-text {
   color: var(--dl-color-gray-white);
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: "Inter";
+  font-weight: 700;
 }
-.component-image1 {
+.app-component-image1 {
   width: var(--dl-size-size-16);
   object-fit: cover;
 }
-.component-text1 {
+.app-component-text1 {
   color: #5d5d75;
   align-self: flex-start;
   font-family: IBM Plex Mono;
 }
 @media(max-width: 800px) {
-  .component-text1 {
+  .app-component-text1 {
     font-style: normal;
     font-weight: 400;
   }

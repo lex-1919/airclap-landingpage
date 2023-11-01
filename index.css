@@ -26,8 +26,8 @@
 .app-component-text {
   color: var(--dl-color-gray-white);
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: "Inter";
+  font-weight: 700;
 }
 .app-component-image1 {
   width: var(--dl-size-size-16);
@@ -87,20 +87,20 @@
   color: var(--dl-color-gray-white);
   font-size: 28px;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
   letter-spacing: %;
   text-transform: none;
   text-decoration: none;
 }
-.home-text01 {
+.home-text05 {
   color: var(--dl-color-gray-subtext);
   font-size: 18px;
-  max-width: 320px;
+  max-width: 360px;
   font-style: normal;
   margin-top: var(--dl-space-space-8);
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
   line-height: 24px;
 }
 .home-container04 {
@@ -137,8 +137,8 @@
 .home-content {
   color: var(--dl-color-gray-darktext);
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
 }
 .home-arrow {
   width: 20px;
@@ -171,8 +171,8 @@
 .home-content1 {
   color: var(--dl-color-gray-darktext);
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
 }
 .home-arrow1 {
   width: 20px;
@@ -205,8 +205,8 @@
 .home-content2 {
   color: var(--dl-color-gray-darktext);
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
 }
 .home-arrow2 {
   width: 20px;
@@ -239,8 +239,8 @@
 .home-content3 {
   color: var(--dl-color-gray-darktext);
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
 }
 .home-arrow3 {
   width: 20px;
@@ -284,24 +284,25 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.home-text02 {
+.home-text06 {
   color: var(--dl-color-gray-white);
   font-size: 24px;
+  max-width: 400px;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
   letter-spacing: %;
   text-transform: none;
   text-decoration: none;
 }
-.home-text03 {
+.home-text07 {
   color: var(--dl-color-gray-subtext);
   font-size: 16px;
-  max-width: 320px;
+  max-width: 400px;
   font-style: normal;
   margin-top: var(--dl-space-space-8);
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
   line-height: 24px;
 }
 .home-container13 {
@@ -331,24 +332,25 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.home-text04 {
+.home-text08 {
   color: var(--dl-color-gray-white);
   font-size: 24px;
+  max-width: 400px;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
   letter-spacing: %;
   text-transform: none;
   text-decoration: none;
 }
-.home-text05 {
+.home-text09 {
   color: var(--dl-color-gray-subtext);
   font-size: 16px;
-  max-width: 320px;
+  max-width: 400px;
   font-style: normal;
   margin-top: var(--dl-space-space-8);
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
   line-height: 24px;
 }
 .home-image1 {
@@ -385,24 +387,25 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.home-text06 {
+.home-text10 {
   color: var(--dl-color-gray-white);
   font-size: 24px;
+  max-width: 400px;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
   letter-spacing: %;
   text-transform: none;
   text-decoration: none;
 }
-.home-text07 {
+.home-text11 {
   color: var(--dl-color-gray-subtext);
   font-size: 16px;
-  max-width: 320px;
+  max-width: 400px;
   font-style: normal;
   margin-top: var(--dl-space-space-8);
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
   line-height: 24px;
 }
 .home-container19 {
@@ -432,24 +435,25 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.home-text08 {
+.home-text12 {
   color: var(--dl-color-gray-white);
   font-size: 24px;
+  max-width: 400px;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
   letter-spacing: %;
   text-transform: none;
   text-decoration: none;
 }
-.home-text09 {
+.home-text13 {
   color: var(--dl-color-gray-subtext);
   font-size: 16px;
-  max-width: 320px;
+  max-width: 400px;
   font-style: normal;
   margin-top: var(--dl-space-space-8);
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
   line-height: 24px;
 }
 .home-image3 {
@@ -516,12 +520,12 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.home-text10 {
+.home-text14 {
   color: var(--dl-color-gray-white);
   font-size: 20px;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
   line-height: 28px;
   letter-spacing: %;
   text-transform: none;
@@ -565,12 +569,12 @@
   margin-bottom: var(--dl-space-space-32);
   justify-content: space-between;
 }
-.home-text14 {
-  color: #8FFF19;
+.home-text18 {
+  color: rgb(143, 255, 25);
   font-size: 24px;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
 }
 .home-container31 {
   gap: var(--dl-space-space-16);
@@ -606,8 +610,8 @@
 .home-content4 {
   color: var(--dl-color-gray-darktext);
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
 }
 .home-arrow4 {
   width: 20px;
@@ -640,8 +644,8 @@
 .home-content5 {
   color: var(--dl-color-gray-darktext);
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
 }
 .home-arrow5 {
   width: 20px;
@@ -674,8 +678,8 @@
 .home-content6 {
   color: var(--dl-color-gray-darktext);
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
 }
 .home-arrow6 {
   width: 20px;
@@ -708,8 +712,8 @@
 .home-content7 {
   color: var(--dl-color-gray-darktext);
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
 }
 .home-arrow7 {
   width: 20px;
@@ -737,11 +741,11 @@
   padding-bottom: var(--dl-space-space-48);
   justify-content: center;
 }
-.home-text15 {
+.home-text19 {
   color: var(--dl-color-gray-subtext);
   font-size: 14px;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
   letter-spacing: %;
   text-transform: none;

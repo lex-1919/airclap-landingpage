@@ -88,23 +88,23 @@
 }
 .BigTitle {
   font-size: 24px;
-  font-family:-apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: "Inter";
+  font-weight: 700;
   letter-spacing: %;
   text-transform: none;
   text-decoration: none;
 }
 .ButtonText {
   font-size: 14px;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: "Inter";
+  font-weight: 700;
   text-transform: none;
   text-decoration: none;
 }
 .SubTitle {
   font-size: 14px;
-  font-family: -apple-system, BlinkMacSystemFont, Tahoma, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
+  font-family: "Inter";
+  font-weight: 700;
   text-transform: none;
   text-decoration: none;
 }
