@@ -1,0 +1,44 @@
+.cta1-cta {
+  width: 311px;
+  height: var(--dl-size-size-48);
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-left: var(--dl-space-space-16);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-16);
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 99.00%);
+}
+.cta1-container {
+  gap: var(--dl-space-space-4);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.cta1-system {
+  width: 20px;
+  object-fit: cover;
+}
+.cta1-text {
+  color: var(--dl-color-gray-darktext);
+  font-style: normal;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+.cta1-arrow {
+  width: 20px;
+  object-fit: cover;
+}
+@media(max-width: 800px) {
+  .cta1-cta {
+    width: 100%;
+    height: 44px;
+    justify-content: space-between;
+  }
+  .cta1-text {
+    color: var(--dl-color-gray-darktext);
+  }
+}
