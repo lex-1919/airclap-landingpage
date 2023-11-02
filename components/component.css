@@ -38,6 +38,9 @@
   align-self: flex-start;
   font-family: IBM Plex Mono;
 }
+.app-component-root-class-name {
+  margin-bottom: var(--dl-space-space-16);
+}
 @media(max-width: 800px) {
   .app-component-text1 {
     font-style: normal;
