@@ -1,0 +1,110 @@
+:root {
+  --dl-size-size-4: 4px;
+  --dl-size-size-8: 8px;
+  --dl-size-size-16: 16px;
+  --dl-size-size-20: 20px;
+  --dl-size-size-24: 24px;
+  --dl-size-size-48: 48px;
+  --dl-size-size-56: 56px;
+  --dl-size-size-96: 96px;
+  --dl-size-size-144: 144px;
+  --dl-size-size-192: 192px;
+  --dl-size-size-288: 288px;
+  --dl-space-space-4: 4px;
+  --dl-space-space-8: 8px;
+  --dl-size-size-1400: 1400px;
+  --dl-space-space-12: 12px;
+  --dl-space-space-16: 16px;
+  --dl-space-space-20: 20px;
+  --dl-space-space-24: 24px;
+  --dl-space-space-28: 28px;
+  --dl-space-space-32: 32px;
+  --dl-space-space-40: 40px;
+  --dl-space-space-48: 48px;
+  --dl-space-space-64: 64px;
+  --dl-space-space-80: 80px;
+  --dl-space-space-96: 96px;
+  --dl-color-gray-dark: #181825ff;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-color-gray-subtext: #9293a6ff;
+  --dl-color-gray-darktext: #181826ff;
+  --dl-color-gray-deepdark: #101019ff;
+  --dl-radius-radius-round: 50%;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+}
+.button {
+  color: var(--dl-color-gray-black);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.input {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.textarea {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.list {
+  width: 100%;
+  margin: 1em 0px 1em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+.list-item {
+  display: list-item;
+}
+.teleport-show {
+  display: flex !important;
+  transform: none !important;
+}
+
+.Content {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.BigTitle {
+  font-size: 24px;
+  font-family: "Inter";
+  font-weight: 700;
+  letter-spacing: %;
+  text-transform: none;
+  text-decoration: none;
+}
+.ButtonText {
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 700;
+  text-transform: none;
+  text-decoration: none;
+}
+.SubTitle {
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 700;
+  text-transform: none;
+  text-decoration: none;
+}
