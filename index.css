@@ -132,9 +132,6 @@
   text-decoration: none;
   background-image: linear-gradient(90deg, rgb(211, 235, 164) 0.00%,rgb(143, 255, 25) 100.00%);
 }
-.airclap-send-any-file-to-any-device-cta:hover {
-  background-image: linear-gradient(90deg, rgb(239, 255, 207) 0.00%,rgb(175, 255, 91) 100.00%);
-}
 .airclap-send-any-file-to-any-device-container05 {
   gap: var(--dl-space-space-4);
   display: flex;
@@ -172,10 +169,7 @@
   flex-direction: row;
   justify-content: space-between;
   text-decoration: none;
-  background-image: linear-gradient(90deg, rgb(211, 235, 164) 0.00%,rgb(143, 255, 25) 100.00%);
-}
-.airclap-send-any-file-to-any-device-cta1:hover {
-  background-image: linear-gradient(90deg, rgb(239, 255, 207) 0.00%,rgb(175, 255, 91) 100.00%);
+  background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 100.00%);
 }
 .airclap-send-any-file-to-any-device-container06 {
   gap: var(--dl-space-space-4);
@@ -216,9 +210,6 @@
   text-decoration: none;
   background-image: linear-gradient(90deg, rgb(211, 235, 164) 0.00%,rgb(143, 255, 25) 100.00%);
 }
-.airclap-send-any-file-to-any-device-cta2:hover {
-  background-image: linear-gradient(90deg, rgb(239, 255, 207) 0.00%,rgb(175, 255, 91) 100.00%);
-}
 .airclap-send-any-file-to-any-device-container07 {
   gap: var(--dl-space-space-4);
   display: flex;
@@ -256,10 +247,7 @@
   flex-direction: row;
   justify-content: space-between;
   text-decoration: none;
-  background-image: linear-gradient(90deg, rgb(211, 235, 164) 0.00%,rgb(143, 255, 25) 100.00%);
-}
-.airclap-send-any-file-to-any-device-cta3:hover {
-  background-image: linear-gradient(90deg, rgb(239, 255, 207) 0.00%,rgb(175, 255, 91) 100.00%);
+  background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 100.00%);
 }
 .airclap-send-any-file-to-any-device-container08 {
   gap: var(--dl-space-space-4);
@@ -293,7 +281,7 @@
 .airclap-send-any-file-to-any-device-container10 {
   flex: 0 0 auto;
   width: 100%;
-  height: auto;
+  height: 424px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -301,7 +289,7 @@
 .airclap-send-any-file-to-any-device-container11 {
   flex: 0 0 auto;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   max-width: 900px;
   align-items: center;
@@ -344,6 +332,7 @@
 }
 .airclap-send-any-file-to-any-device-container13 {
   width: 100%;
+  height: 424px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -353,7 +342,7 @@
 .airclap-send-any-file-to-any-device-container14 {
   flex: 0 0 auto;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   max-width: 900px;
   align-items: center;
@@ -396,6 +385,7 @@
 }
 .airclap-send-any-file-to-any-device-container16 {
   width: 100%;
+  height: 486px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -404,7 +394,7 @@
 .airclap-send-any-file-to-any-device-container17 {
   flex: 0 0 auto;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   max-width: 900px;
   align-items: center;
@@ -447,6 +437,7 @@
 }
 .airclap-send-any-file-to-any-device-container19 {
   width: 100%;
+  height: 424px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -456,7 +447,7 @@
 .airclap-send-any-file-to-any-device-container20 {
   flex: 0 0 auto;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   max-width: 900px;
   align-items: center;
@@ -499,6 +490,7 @@
 }
 .airclap-send-any-file-to-any-device-container22 {
   width: 100%;
+  height: 542px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -508,7 +500,7 @@
 .airclap-send-any-file-to-any-device-container23 {
   flex: 0 0 auto;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   max-width: 900px;
   align-self: center;
@@ -526,6 +518,7 @@
 }
 .airclap-send-any-file-to-any-device-container24 {
   width: 100%;
+  height: 160px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -535,7 +528,7 @@
 .airclap-send-any-file-to-any-device-container25 {
   flex: 0 0 auto;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   max-width: 900px;
   align-self: center;
@@ -570,6 +563,7 @@
 }
 .airclap-send-any-file-to-any-device-container27 {
   width: 100%;
+  height: 508px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -579,7 +573,7 @@
 .airclap-send-any-file-to-any-device-container28 {
   flex: 0 0 auto;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   max-width: 900px;
   align-items: center;
@@ -638,9 +632,6 @@
   text-decoration: none;
   background-image: linear-gradient(90deg, rgb(211, 235, 164) 0.00%,rgb(143, 255, 25) 100.00%);
 }
-.airclap-send-any-file-to-any-device-cta4:hover {
-  background-image: linear-gradient(90deg, rgb(239, 255, 207) 0.00%,rgb(175, 255, 91) 100.00%);
-}
 .airclap-send-any-file-to-any-device-container33 {
   gap: var(--dl-space-space-4);
   display: flex;
@@ -678,10 +669,7 @@
   flex-direction: row;
   justify-content: space-between;
   text-decoration: none;
-  background-image: linear-gradient(90deg, rgb(211, 235, 164) 0.00%,rgb(143, 255, 25) 100.00%);
-}
-.airclap-send-any-file-to-any-device-cta5:hover {
-  background-image: linear-gradient(90deg, rgb(239, 255, 207) 0.00%,rgb(175, 255, 91) 100.00%);
+  background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 100.00%);
 }
 .airclap-send-any-file-to-any-device-container34 {
   gap: var(--dl-space-space-4);
@@ -722,9 +710,6 @@
   text-decoration: none;
   background-image: linear-gradient(90deg, rgb(211, 235, 164) 0.00%,rgb(143, 255, 25) 100.00%);
 }
-.airclap-send-any-file-to-any-device-cta6:hover {
-  background-image: linear-gradient(90deg, rgb(239, 255, 207) 0.00%,rgb(175, 255, 91) 100.00%);
-}
 .airclap-send-any-file-to-any-device-container35 {
   gap: var(--dl-space-space-4);
   display: flex;
@@ -762,10 +747,7 @@
   flex-direction: row;
   justify-content: space-between;
   text-decoration: none;
-  background-image: linear-gradient(90deg, rgb(211, 235, 164) 0.00%,rgb(143, 255, 25) 100.00%);
-}
-.airclap-send-any-file-to-any-device-cta7:hover {
-  background-image: linear-gradient(90deg, rgb(239, 255, 207) 0.00%,rgb(175, 255, 91) 100.00%);
+  background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 100.00%);
 }
 .airclap-send-any-file-to-any-device-container36 {
   gap: var(--dl-space-space-4);
@@ -790,6 +772,7 @@
 }
 .airclap-send-any-file-to-any-device-container37 {
   width: 100%;
+  height: 96px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -799,7 +782,7 @@
 .airclap-send-any-file-to-any-device-container38 {
   flex: 0 0 auto;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   max-width: 900px;
   align-self: center;
@@ -986,7 +969,6 @@
   }
   .airclap-send-any-file-to-any-device-container29 {
     width: 100%;
-    height: 313px;
     max-width: 100%;
     margin-top: var(--dl-space-space-48);
   }
