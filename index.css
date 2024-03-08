@@ -834,6 +834,8 @@
   }
   .airclap-send-any-file-to-any-device-content {
     color: var(--dl-color-gray-darktext);
+    font-style: normal;
+    font-weight: 600;
   }
   .airclap-send-any-file-to-any-device-cta1 {
     width: 100%;
@@ -1036,11 +1038,7 @@
   .airclap-send-any-file-to-any-device-content7 {
     color: var(--dl-color-gray-darktext);
   }
-  .airclap-send-any-file-to-any-device-container37 {
-    height: auto;
-  }
   .airclap-send-any-file-to-any-device-container38 {
-    height: auto;
     max-width: 100%;
     align-items: center;
     flex-direction: row;
