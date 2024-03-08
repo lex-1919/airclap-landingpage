@@ -1,5 +1,6 @@
 .cta-cta {
   width: 311px;
+  cursor: pointer;
   height: var(--dl-size-size-48);
   display: flex;
   position: relative;
@@ -9,7 +10,11 @@
   padding-right: var(--dl-space-space-16);
   flex-direction: row;
   justify-content: space-between;
+  text-decoration: none;
   background-image: linear-gradient(90deg, rgb(211, 235, 164) 0.00%,rgb(143, 255, 25) 100.00%);
+}
+.cta-cta:hover {
+  background-image: linear-gradient(90deg, rgb(239, 255, 207) 0.00%,rgb(175, 255, 91) 100.00%);
 }
 .cta-container {
   gap: var(--dl-space-space-4);
@@ -25,12 +30,39 @@
 .cta-content {
   color: var(--dl-color-gray-darktext);
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Inter";
   font-weight: 700;
 }
 .cta-arrow {
   width: 20px;
   object-fit: cover;
+}
+.cta-root-class-name {
+  background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 100.00%);
+}
+.cta-root-class-name1 {
+  background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 100.00%);
+}
+.cta-root-class-name2 {
+  background-image: linear-gradient(90deg, rgb(211, 235, 164) 1.00%,rgb(143, 255, 25) 100.00%);
+}
+.cta-root-class-name3 {
+  background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 100.00%);
+}
+.cta-root-class-name4 {
+  background-image: linear-gradient(90deg, rgb(211, 235, 164) 1.00%,rgb(143, 255, 25) 100.00%);
+}
+.cta-root-class-name5 {
+  background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 100.00%);
+}
+.cta-root-class-name6 {
+  background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 100.00%);
+}
+.cta-root-class-name7 {
+  background-image: linear-gradient(90deg, rgb(211, 235, 164) 1.00%,rgb(143, 255, 25) 100.00%);
+}
+.cta-root-class-name8 {
+  background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 100.00%);
 }
 @media(max-width: 800px) {
   .cta-cta {

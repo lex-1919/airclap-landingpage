@@ -1,4 +1,4 @@
-.app-component-container {
+.logo-group-container {
   gap: var(--dl-space-space-16);
   display: flex;
   position: relative;
@@ -6,43 +6,43 @@
   align-items: center;
   justify-content: flex-start;
 }
-.app-component-image {
+.logo-group-image {
   width: 56px;
   object-fit: cover;
 }
-.app-component-container1 {
+.logo-group-container1 {
   gap: var(--dl-space-space-4);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.app-component-container2 {
+.logo-group-container2 {
   gap: var(--dl-space-space-4);
   display: flex;
   align-self: flex-start;
   align-items: center;
   justify-content: flex-start;
 }
-.app-component-text {
+.logo-group-text {
   color: var(--dl-color-gray-white);
   font-style: normal;
   font-family: "Inter";
   font-weight: 700;
 }
-.app-component-image1 {
+.logo-group-image1 {
   width: var(--dl-size-size-16);
   object-fit: cover;
 }
-.app-component-text1 {
+.logo-group-text1 {
   color: #5d5d75;
   align-self: flex-start;
-  font-family: IBM Plex Mono;
+  font-family: "Inter";
 }
-.app-component-root-class-name {
+.logo-group-root-class-name {
   margin-bottom: var(--dl-space-space-16);
 }
 @media(max-width: 800px) {
-  .app-component-text1 {
+  .logo-group-text1 {
     font-style: normal;
     font-weight: 400;
   }
