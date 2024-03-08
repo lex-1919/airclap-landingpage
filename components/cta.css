@@ -37,15 +37,6 @@
   width: 20px;
   object-fit: cover;
 }
-.cta-root-class-name {
-  background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 100.00%);
-}
-.cta-root-class-name1 {
-  background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 100.00%);
-}
-.cta-root-class-name2 {
-  background-image: linear-gradient(90deg, rgb(211, 235, 164) 1.00%,rgb(143, 255, 25) 100.00%);
-}
 .cta-root-class-name3 {
   background-image: linear-gradient(90deg, rgb(143, 255, 25) 0.00%,rgb(211, 235, 164) 100.00%);
 }
