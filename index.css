@@ -864,8 +864,10 @@
   }
   .airclap-send-any-file-to-any-device-container10 {
     width: 100%;
+    height: auto;
   }
   .airclap-send-any-file-to-any-device-container11 {
+    height: auto;
     max-width: 100%;
     flex-direction: column;
   }
@@ -885,7 +887,11 @@
     max-width: auto;
     align-self: flex-start;
   }
+  .airclap-send-any-file-to-any-device-container13 {
+    height: auto;
+  }
   .airclap-send-any-file-to-any-device-container14 {
+    height: auto;
     max-width: 100%;
     flex-direction: column-reverse;
   }
@@ -903,6 +909,9 @@
     width: auto;
     max-width: 80%;
   }
+  .airclap-send-any-file-to-any-device-container16 {
+    height: auto;
+  }
   .airclap-send-any-file-to-any-device-container17 {
     flex-direction: column;
   }
@@ -913,6 +922,9 @@
   .airclap-send-any-file-to-any-device-container18 {
     max-width: 100%;
     margin-top: var(--dl-space-space-32);
+  }
+  .airclap-send-any-file-to-any-device-container19 {
+    height: auto;
   }
   .airclap-send-any-file-to-any-device-container20 {
     max-width: 100%;
@@ -932,6 +944,9 @@
     width: auto;
     max-width: 80%;
   }
+  .airclap-send-any-file-to-any-device-container22 {
+    height: auto;
+  }
   .airclap-send-any-file-to-any-device-container23 {
     max-width: 100%;
     flex-direction: column;
@@ -939,6 +954,9 @@
   .airclap-send-any-file-to-any-device-image4 {
     width: 100%;
     max-width: 80%;
+  }
+  .airclap-send-any-file-to-any-device-container24 {
+    height: auto;
   }
   .airclap-send-any-file-to-any-device-container25 {
     align-items: center;
@@ -956,6 +974,9 @@
     line-height: 28px;
     text-transform: none;
     text-decoration: none;
+  }
+  .airclap-send-any-file-to-any-device-container27 {
+    height: auto;
   }
   .airclap-send-any-file-to-any-device-container28 {
     max-width: 100%;
@@ -1015,7 +1036,11 @@
   .airclap-send-any-file-to-any-device-content7 {
     color: var(--dl-color-gray-darktext);
   }
+  .airclap-send-any-file-to-any-device-container37 {
+    height: auto;
+  }
   .airclap-send-any-file-to-any-device-container38 {
+    height: auto;
     max-width: 100%;
     align-items: center;
     flex-direction: row;
