@@ -26,7 +26,7 @@
 .logo-group-text {
   color: var(--dl-color-gray-white);
   font-style: normal;
-  font-family: "Inter";
+  font-family: "-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif";
   font-weight: 700;
 }
 .logo-group-image1 {
@@ -36,10 +36,10 @@
 .logo-group-text1 {
   color: #5d5d75;
   align-self: flex-start;
-  font-family: "Inter";
+  font-family: "-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans","Droid Sans", "Helvetica Neue", sans-serif";
 }
 .logo-group-root-class-name {
-  margin-bottom: var(--dl-space-space-16);
+  margin-bottom: var(--dl-space-space-32);
 }
 @media(max-width: 800px) {
   .logo-group-text1 {
