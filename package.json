@@ -2,9 +2,13 @@
   "name": "airclap",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "parcel-bundler": "^1.6.1"
+  "scripts": {
+    "build": "parcel build index.html"
   },
-  "scripts": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "parcel": "^2.0.0"
+  },
+  "engines": {
+    "node": "24.x"
+  }
 }
