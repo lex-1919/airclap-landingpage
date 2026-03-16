@@ -1,0 +1,20 @@
+# Airclap
+
+> Free cross-platform file transfer tool for Mac, iOS, Windows, and Android devices over local network. No internet required, no file size limits, ultra-fast LAN transfers.
+
+## Product Info
+- [Homepage](https://airclap.app): Product overview and download links
+- [App Store](https://apps.apple.com/us/app/airclap/id6467128147): iOS and macOS versions
+- [Google Play](https://play.google.com/store/apps/details?id=tech.gentleflow.airclap.pro): Android version
+- [Microsoft Store](https://apps.microsoft.com/detail/9n19c4qdkr6d): Windows version
+
+## Key Features
+- Cross-platform file transfer (macOS, iOS, Windows, Android)
+- LAN-based transfers — no internet connection needed
+- Drag and drop interface
+- No file size limits
+- Text content sharing support
+- Multiple file format support with clear previews
+
+## Community & Recognition
+- [Product Hunt](https://www.producthunt.com/products/airclap): #1 Product of the Day
