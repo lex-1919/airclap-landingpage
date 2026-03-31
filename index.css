@@ -320,7 +320,11 @@ img { display: block; max-width: 100%; height: auto; }
   border-top: 1px solid var(--border);
   overflow: hidden;
 }
-.testimonials .section__title { padding: 0 32px; }
+.testimonials .section__title { padding: 0 32px; margin-bottom: 8px; }
+.section__sub {
+  font-size: 15px; color: var(--text-3); text-align: center;
+  padding: 0 32px; margin-bottom: 48px;
+}
 
 /* Marquee container */
 .marquee {
@@ -374,6 +378,58 @@ img { display: block; max-width: 100%; height: auto; }
   font-size: 13px; font-weight: 600; color: var(--text-3);
 }
 
+/* ===== MID-CTA ===== */
+.mid-cta {
+  position: relative; z-index: 1;
+  padding: 64px 0; text-align: center;
+}
+.mid-cta .container { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.btn--lg { padding: 18px 40px; font-size: 17px; }
+.mid-cta__hint {
+  font-size: 14px; color: var(--text-3);
+}
+
+/* ===== FAQ ===== */
+.faq {
+  position: relative; z-index: 1;
+  padding: 100px 0;
+}
+.faq .section__title { text-align: center; margin-bottom: 48px; }
+.faq__grid {
+  display: flex; flex-direction: column; gap: 1px;
+  background: var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.faq__item {
+  background: var(--bg-card);
+  padding: 0;
+}
+.faq__q {
+  padding: 24px 32px;
+  font-size: 17px; font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  display: flex; align-items: center; justify-content: space-between;
+  transition: color 0.2s;
+}
+.faq__q:hover { color: var(--accent); }
+.faq__q::after {
+  content: '+'; font-size: 22px; font-weight: 400;
+  color: var(--text-3);
+  transition: transform 0.3s;
+}
+details[open] .faq__q::after {
+  content: '\2212'; /* minus */
+  color: var(--accent);
+}
+.faq__q::-webkit-details-marker { display: none; }
+.faq__a {
+  padding: 0 32px 24px;
+  font-size: 15px; line-height: 1.7;
+  color: var(--text-2);
+}
+
 /* ===== DOWNLOAD ===== */
 .download {
   position: relative; z-index: 1;
@@ -390,7 +446,16 @@ img { display: block; max-width: 100%; height: auto; }
   letter-spacing: -0.035em; margin-bottom: 12px;
 }
 .download__sub {
-  font-size: 18px; color: var(--text-2); margin-bottom: 48px;
+  font-size: 18px; color: var(--text-2); margin-bottom: 24px;
+}
+.download__trust {
+  display: flex; justify-content: center; align-items: center;
+  gap: 24px; flex-wrap: wrap;
+  font-size: 14px; color: var(--text-2);
+  margin-bottom: 40px;
+}
+.download__trust span {
+  display: inline-flex; align-items: center; gap: 4px;
 }
 .download__badges {
   display: flex; justify-content: center; align-items: center;

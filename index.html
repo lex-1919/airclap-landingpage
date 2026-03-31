@@ -69,6 +69,55 @@
     }
   </script>
 
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Airclap really free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Basic file transfer is completely free with no account needed. Pro unlocks unlimited files and advanced features at a very affordable price."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is Airclap different from AirDrop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AirDrop only works between Apple devices. Airclap works between any combination — Mac to Android, iPhone to Windows, anything to anything."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Airclap safe? Where do my files go?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Files transfer directly between your devices over local WiFi. Nothing goes to any server. We collect zero data. Your files stay yours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do both devices need the Airclap app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, install Airclap on both devices. They find each other automatically on the same WiFi — no pairing or setup needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast is Airclap's file transfer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As fast as your WiFi allows — over 200% faster than similar tools. Most files arrive in seconds, even large ones."
+          }
+        }
+      ]
+    }
+  </script>
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BEFVXFLED"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -275,6 +324,19 @@
     </div>
   </section>
 
+  <!-- Mid-page CTA -->
+  <section class="mid-cta" data-animate>
+    <div class="container container--narrow">
+      <a href="#download" class="btn btn--primary btn--lg">
+        <span class="btn__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </span>
+        <span data-i18n="mid_cta_btn">Download Free</span>
+      </a>
+      <span class="mid-cta__hint" data-i18n="mid_cta_hint">Available on Mac, iOS, Windows & Android</span>
+    </div>
+  </section>
+
   <!-- Why Airclap -->
   <section class="why" data-animate>
     <div class="container container--narrow">
@@ -291,8 +353,8 @@
           <div class="why__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
           </div>
-          <h3 data-i18n="why2_title">Maximum Speed</h3>
-          <p data-i18n="why2_desc">Transfers at the full speed your WiFi allows. Large files arrive in seconds, not minutes.</p>
+          <h3 data-i18n="why2_title">200% Faster</h3>
+          <p data-i18n="why2_desc">Over 200% faster than alternatives. A 1GB file transfers in seconds over WiFi. No cloud bottleneck, ever.</p>
         </div>
         <div class="why__card">
           <div class="why__icon">
@@ -329,6 +391,7 @@
   <!-- Testimonials -->
   <section class="testimonials" data-animate>
     <h2 class="section__title" data-i18n="testimonials_title">Loved by users worldwide</h2>
+    <p class="section__sub" data-i18n="testimonials_source">From App Store, Product Hunt & our community</p>
 
     <!-- Row 1: scrolls left -->
     <div class="marquee">
@@ -457,24 +520,58 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="faq" data-animate>
+    <div class="container container--narrow">
+      <h2 class="section__title" data-i18n="faq_title">Frequently Asked Questions</h2>
+      <div class="faq__grid">
+        <details class="faq__item" open>
+          <summary class="faq__q" data-i18n="faq1_q">Is Airclap really free?</summary>
+          <p class="faq__a" data-i18n="faq1_a">Yes. Basic file transfer is completely free with no account needed. Pro unlocks unlimited files and advanced features at a very affordable price.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q" data-i18n="faq2_q">How is this different from AirDrop?</summary>
+          <p class="faq__a" data-i18n="faq2_a">AirDrop only works between Apple devices. Airclap works between any combination — Mac to Android, iPhone to Windows, anything to anything.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q" data-i18n="faq3_q">Is it safe? Where do my files go?</summary>
+          <p class="faq__a" data-i18n="faq3_a">Files transfer directly between your devices over local WiFi. Nothing goes to any server. We collect zero data. Your files stay yours.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q" data-i18n="faq4_q">Do both devices need the app?</summary>
+          <p class="faq__a" data-i18n="faq4_a">Yes, install Airclap on both devices. They find each other automatically on the same WiFi — no pairing or setup needed.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q" data-i18n="faq5_q">How fast is the transfer?</summary>
+          <p class="faq__a" data-i18n="faq5_a">As fast as your WiFi allows — over 200% faster than similar tools. Most files arrive in seconds, even large ones.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- Download Section -->
   <section class="download" id="download" data-animate>
     <div class="container container--narrow">
       <div class="download__glow"></div>
-      <h2 class="download__title" data-i18n="dl_title">Get Airclap</h2>
-      <p class="download__sub" data-i18n="dl_sub">Free download. No account required.</p>
+      <h2 class="download__title" data-i18n="dl_title">Get Airclap — it's free</h2>
+      <p class="download__sub" data-i18n="dl_sub">No account. No credit card. Works in 30 seconds.</p>
+      <div class="download__trust">
+        <span>⭐ 5.0 App Store</span>
+        <span>🏆 #1 Product Hunt</span>
+        <span>🌍 120+ <span data-i18n="trust_countries">Countries</span></span>
+      </div>
       <div class="download__badges">
         <a href="https://apps.apple.com/us/app/airclap/id6467128147" target="_blank" rel="noreferrer noopener">
-          <img src="https://github.com/Gentleflow/Airclap/raw/main/images/ios.webp" alt="Download on the App Store" class="download__badge">
+          <img src="public/badge-appstore.webp" alt="Download on the App Store" class="download__badge">
         </a>
         <a href="https://apps.apple.com/us/app/airclap/id6467128147" target="_blank" rel="noreferrer noopener">
-          <img src="https://github.com/Gentleflow/Airclap/raw/main/images/mac.webp" alt="Download on the Mac App Store" class="download__badge">
+          <img src="public/badge-mac.webp" alt="Download on the Mac App Store" class="download__badge">
         </a>
         <a href="https://www.microsoft.com/store/productId/9N19C4QDKR6D" target="_blank" rel="noreferrer noopener">
-          <img src="https://github.com/Gentleflow/Airclap/raw/main/images/ms.webp" alt="Get it from Microsoft Store" class="download__badge">
+          <img src="public/badge-microsoft.webp" alt="Get it from Microsoft Store" class="download__badge">
         </a>
         <a href="https://play.google.com/store/apps/details?id=tech.gentleflow.airclap.pro" target="_blank" rel="noreferrer noopener">
-          <img src="https://github.com/Gentleflow/Airclap/raw/main/images/gp.webp" alt="Get it on Google Play" class="download__badge">
+          <img src="public/badge-googleplay.webp" alt="Get it on Google Play" class="download__badge">
         </a>
       </div>
     </div>
