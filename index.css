@@ -546,4 +546,60 @@ img { display: block; max-width: 100%; height: auto; }
   .problem { padding: 64px 0 48px; }
   .steps, .why, .download { padding: 64px 0; }
   .section__title { margin-bottom: 40px; }
+  .lang-switcher__btn span { font-size: 11px; }
 }
+
+/* ===== LANGUAGE SWITCHER ===== */
+.nav__right {
+  display: flex; align-items: center; gap: 12px;
+}
+.lang-switcher {
+  position: relative;
+}
+.lang-switcher__btn {
+  display: flex; align-items: center; gap: 6px;
+  padding: 6px 12px; border-radius: 100px;
+  background: transparent; border: 1px solid var(--border);
+  color: var(--text-2); cursor: pointer;
+  font-family: var(--font); font-size: 13px; font-weight: 500;
+  transition: border-color 0.2s, color 0.2s;
+}
+.lang-switcher__btn:hover {
+  border-color: var(--border-hover); color: var(--text);
+}
+.lang-switcher__btn svg { opacity: 0.6; }
+.lang-switcher__dropdown {
+  display: none; position: absolute; top: calc(100% + 8px); right: 0;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); padding: 4px;
+  min-width: 120px; z-index: 200;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+}
+.lang-switcher__dropdown.open { display: block; }
+.lang-switcher__option {
+  display: block; width: 100%; padding: 8px 14px;
+  background: none; border: none; color: var(--text-2);
+  font-family: var(--font); font-size: 13px; font-weight: 500;
+  text-align: left; cursor: pointer; border-radius: var(--radius-xs);
+  transition: background 0.15s, color 0.15s;
+}
+.lang-switcher__option:hover {
+  background: var(--accent-dim); color: var(--text);
+}
+.lang-switcher__option.active {
+  color: var(--accent);
+}
+
+/* ===== RTL SUPPORT ===== */
+[dir="rtl"] .nav__inner { flex-direction: row-reverse; }
+[dir="rtl"] .nav__logo { flex-direction: row-reverse; }
+[dir="rtl"] .nav__right { flex-direction: row-reverse; }
+[dir="rtl"] .hero .container { direction: rtl; }
+[dir="rtl"] .feature { direction: rtl; }
+[dir="rtl"] .feature--reverse { direction: rtl; }
+[dir="rtl"] .steps__grid { direction: rtl; }
+[dir="rtl"] .step__arrow { transform: scaleX(-1); }
+[dir="rtl"] .why__grid { direction: rtl; }
+[dir="rtl"] .footer__inner { direction: rtl; }
+[dir="rtl"] .lang-switcher__dropdown { right: auto; left: 0; }
+[dir="rtl"] .lang-switcher__option { text-align: right; }

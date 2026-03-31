@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./index.css">
+  <script src="./i18n.js" defer></script>
 
   <script type="application/ld+json">
     {
@@ -93,7 +94,10 @@
         <img src="z-images/app-icon.webp" alt="Airclap" width="36" height="36">
         <span>Airclap</span>
       </a>
-      <a href="#download" class="nav__cta">Download Free</a>
+      <div class="nav__right">
+        <div class="lang-switcher"></div>
+        <a href="#download" class="nav__cta" data-i18n="nav_cta">Download Free</a>
+      </div>
     </div>
   </nav>
 
@@ -112,10 +116,10 @@
           <svg class="ph-badge__trophy" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9a6 6 0 1012 0V4H6v5z" fill="#FF6154"/><path d="M6 7H3a1 1 0 00-1 1v1a4 4 0 004 4M18 7h3a1 1 0 011 1v1a4 4 0 01-4 4M9 21h6M12 17v4" stroke="#FF6154" stroke-width="1.5" stroke-linecap="round"/></svg>
         </a>
         <h1 class="hero__title">
-          Drop files between<br>
-          <span class="hero__title--accent">any device.</span> Instantly.
+          <span data-i18n="hero_title_1">Drop files between</span><br>
+          <span class="hero__title--accent" data-i18n="hero_title_accent">any device.</span> <span data-i18n="hero_title_2">Instantly.</span>
         </h1>
-        <p class="hero__sub">
+        <p class="hero__sub" data-i18n="hero_sub">
           Transfer files between Mac, iPhone, Windows and Android<br class="hide-mobile">
           over local WiFi. No internet. No cables. No cloud.
         </p>
@@ -124,9 +128,9 @@
             <span class="btn__icon" id="heroBtnIcon">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             </span>
-            <span id="heroBtnText">Download Free</span>
+            <span id="heroBtnText" data-i18n="hero_btn">Download Free</span>
           </a>
-          <span class="hero__hint">Free &middot; No account needed &middot; Works in 30 seconds</span>
+          <span class="hero__hint" data-i18n="hero_hint">Free &middot; No account needed &middot; Works in 30 seconds</span>
         </div>
       </div>
       <div class="hero__visual">
@@ -142,27 +146,27 @@
       <div class="trust__grid">
         <div class="trust__item">
           <span class="trust__number">120+</span>
-          <span class="trust__label">Countries</span>
+          <span class="trust__label" data-i18n="trust_countries">Countries</span>
         </div>
         <div class="trust__divider"></div>
         <div class="trust__item">
           <span class="trust__number">4</span>
-          <span class="trust__label">Platforms</span>
+          <span class="trust__label" data-i18n="trust_platforms">Platforms</span>
         </div>
         <div class="trust__divider"></div>
         <div class="trust__item">
           <span class="trust__number">5.0</span>
-          <span class="trust__label">App Store</span>
+          <span class="trust__label" data-i18n="trust_appstore">App Store</span>
         </div>
         <div class="trust__divider"></div>
         <div class="trust__item">
           <span class="trust__number">#1</span>
-          <span class="trust__label">Product Hunt</span>
+          <span class="trust__label" data-i18n="trust_producthunt">Product Hunt</span>
         </div>
         <div class="trust__divider"></div>
         <div class="trust__item">
           <span class="trust__number">44</span>
-          <span class="trust__label">Languages</span>
+          <span class="trust__label" data-i18n="trust_languages">Languages</span>
         </div>
       </div>
     </div>
@@ -171,11 +175,11 @@
   <!-- Problem → Solution -->
   <section class="problem" data-animate>
     <div class="container container--narrow">
-      <p class="problem__text">
+      <p class="problem__text" data-i18n="problem_text">
         AirDrop is Apple-only. Nearby Share is Android-only.<br class="hide-mobile">
         USB cables are 2005. Emailing files to yourself is embarrassing.
       </p>
-      <p class="problem__answer">There's a better way.</p>
+      <p class="problem__answer" data-i18n="problem_answer">There's a better way.</p>
     </div>
   </section>
 
@@ -185,9 +189,9 @@
 
       <div class="feature" data-animate>
         <div class="feature__text">
-          <span class="feature__tag">Cross-Platform</span>
-          <h2 class="feature__title">Works across every device you own</h2>
-          <p class="feature__desc">Mac to Android. iPhone to Windows. Any combination, any direction. Open Airclap on both devices — they find each other automatically.</p>
+          <span class="feature__tag" data-i18n="feat1_tag">Cross-Platform</span>
+          <h2 class="feature__title" data-i18n="feat1_title">Works across every device you own</h2>
+          <p class="feature__desc" data-i18n="feat1_desc">Mac to Android. iPhone to Windows. Any combination, any direction. Open Airclap on both devices — they find each other automatically.</p>
         </div>
         <div class="feature__visual">
           <img src="z-images/transfer.webp" alt="Cross-platform file transfer between devices" loading="lazy">
@@ -196,9 +200,9 @@
 
       <div class="feature feature--reverse" data-animate>
         <div class="feature__text">
-          <span class="feature__tag">Dead Simple</span>
-          <h2 class="feature__title">Drag. Drop. Done.</h2>
-          <p class="feature__desc">No accounts, no pairing codes, no configuration. Drag files onto Airclap, pick the device, and watch them arrive in seconds. Supports text sharing too.</p>
+          <span class="feature__tag" data-i18n="feat2_tag">Dead Simple</span>
+          <h2 class="feature__title" data-i18n="feat2_title">Drag. Drop. Done.</h2>
+          <p class="feature__desc" data-i18n="feat2_desc">No accounts, no pairing codes, no configuration. Drag files onto Airclap, pick the device, and watch them arrive in seconds. Supports text sharing too.</p>
         </div>
         <div class="feature__visual">
           <img src="z-images/send.webp" alt="Drag and drop file sending interface" loading="lazy">
@@ -207,9 +211,9 @@
 
       <div class="feature" data-animate>
         <div class="feature__text">
-          <span class="feature__tag">Transfer History</span>
-          <h2 class="feature__title">Every file, accounted for</h2>
-          <p class="feature__desc">Real-time transfer status, complete history, and quick access to received files. Never lose track of what you sent or received.</p>
+          <span class="feature__tag" data-i18n="feat3_tag">Transfer History</span>
+          <h2 class="feature__title" data-i18n="feat3_title">Every file, accounted for</h2>
+          <p class="feature__desc" data-i18n="feat3_desc">Real-time transfer status, complete history, and quick access to received files. Never lose track of what you sent or received.</p>
         </div>
         <div class="feature__visual">
           <img src="z-images/histroy.webp" alt="File transfer history and records" loading="lazy">
@@ -218,9 +222,9 @@
 
       <div class="feature feature--reverse" data-animate>
         <div class="feature__text">
-          <span class="feature__tag">Any Format</span>
-          <h2 class="feature__title">Photos, videos, ZIPs, whatever</h2>
-          <p class="feature__desc">No file type restrictions. No compression. Your files arrive exactly as they left — original quality, full size, format previews included.</p>
+          <span class="feature__tag" data-i18n="feat4_tag">Any Format</span>
+          <h2 class="feature__title" data-i18n="feat4_title">Photos, videos, ZIPs, whatever</h2>
+          <p class="feature__desc" data-i18n="feat4_desc">No file type restrictions. No compression. Your files arrive exactly as they left — original quality, full size, format previews included.</p>
         </div>
         <div class="feature__visual">
           <img src="z-images/format.webp" alt="Multiple file format support" loading="lazy">
@@ -229,9 +233,9 @@
 
       <div class="feature" data-animate>
         <div class="feature__text">
-          <span class="feature__tag">Auto Discovery</span>
-          <h2 class="feature__title">Zero setup. Instant connection.</h2>
-          <p class="feature__desc">Open Airclap on any device — it automatically discovers nearby devices on the same WiFi. No pairing codes, no QR scans, no manual IP addresses. Just open and go.</p>
+          <span class="feature__tag" data-i18n="feat5_tag">Auto Discovery</span>
+          <h2 class="feature__title" data-i18n="feat5_title">Zero setup. Instant connection.</h2>
+          <p class="feature__desc" data-i18n="feat5_desc">Open Airclap on any device — it automatically discovers nearby devices on the same WiFi. No pairing codes, no QR scans, no manual IP addresses. Just open and go.</p>
         </div>
         <div class="feature__visual">
           <img src="z-images/mockup.webp" alt="Automatic device discovery on mobile and desktop" loading="lazy">
@@ -244,28 +248,28 @@
   <!-- How It Works -->
   <section class="steps" data-animate>
     <div class="container container--narrow">
-      <h2 class="section__title">Three steps. That's it.</h2>
+      <h2 class="section__title" data-i18n="steps_title">Three steps. That's it.</h2>
       <div class="steps__grid">
         <div class="step">
           <div class="step__num">1</div>
-          <h3 class="step__title">Install</h3>
-          <p class="step__desc">Download Airclap on the devices you want to connect. Takes 10 seconds.</p>
+          <h3 class="step__title" data-i18n="step1_title">Install</h3>
+          <p class="step__desc" data-i18n="step1_desc">Download Airclap on the devices you want to connect. Takes 10 seconds.</p>
         </div>
         <div class="step__arrow">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </div>
         <div class="step">
           <div class="step__num">2</div>
-          <h3 class="step__title">Drag & Drop</h3>
-          <p class="step__desc">Drag any file onto Airclap. Pick the destination device from the list.</p>
+          <h3 class="step__title" data-i18n="step2_title">Drag & Drop</h3>
+          <p class="step__desc" data-i18n="step2_desc">Drag any file onto Airclap. Pick the destination device from the list.</p>
         </div>
         <div class="step__arrow">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </div>
         <div class="step">
           <div class="step__num">3</div>
-          <h3 class="step__title">Received</h3>
-          <p class="step__desc">File arrives at full speed over your local WiFi. No internet touched.</p>
+          <h3 class="step__title" data-i18n="step3_title">Received</h3>
+          <p class="step__desc" data-i18n="step3_desc">File arrives at full speed over your local WiFi. No internet touched.</p>
         </div>
       </div>
     </div>
@@ -274,49 +278,49 @@
   <!-- Why Airclap -->
   <section class="why" data-animate>
     <div class="container container--narrow">
-      <h2 class="section__title">Why Airclap</h2>
+      <h2 class="section__title" data-i18n="why_title">Why Airclap</h2>
       <div class="why__grid">
         <div class="why__card">
           <div class="why__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18.36 6.64a9 9 0 11-12.73 0"/><line x1="12" y1="2" x2="12" y2="12"/></svg>
           </div>
-          <h3>No Internet Required</h3>
-          <p>Works entirely over local WiFi. Your files never touch any server, ever.</p>
+          <h3 data-i18n="why1_title">No Internet Required</h3>
+          <p data-i18n="why1_desc">Works entirely over local WiFi. Your files never touch any server, ever.</p>
         </div>
         <div class="why__card">
           <div class="why__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
           </div>
-          <h3>Maximum Speed</h3>
-          <p>Transfers at the full speed your WiFi allows. Large files arrive in seconds, not minutes.</p>
+          <h3 data-i18n="why2_title">Maximum Speed</h3>
+          <p data-i18n="why2_desc">Transfers at the full speed your WiFi allows. Large files arrive in seconds, not minutes.</p>
         </div>
         <div class="why__card">
           <div class="why__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h3>Private by Design</h3>
-          <p>No accounts, no cloud, no data collection. Airclap doesn't know what you send.</p>
+          <h3 data-i18n="why3_title">Private by Design</h3>
+          <p data-i18n="why3_desc">No accounts, no cloud, no data collection. Airclap doesn't know what you send.</p>
         </div>
         <div class="why__card">
           <div class="why__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
-          <h3>Every Platform</h3>
-          <p>Mac, iOS, Windows, Android, and Apple Vision Pro. Full coverage, one app.</p>
+          <h3 data-i18n="why4_title">Every Platform</h3>
+          <p data-i18n="why4_desc">Mac, iOS, Windows, Android, and Apple Vision Pro. Full coverage, one app.</p>
         </div>
         <div class="why__card">
           <div class="why__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
           </div>
-          <h3>Zero Compression</h3>
-          <p>Files arrive exactly as they left. No quality loss, no format conversion, ever.</p>
+          <h3 data-i18n="why5_title">Zero Compression</h3>
+          <p data-i18n="why5_desc">Files arrive exactly as they left. No quality loss, no format conversion, ever.</p>
         </div>
         <div class="why__card">
           <div class="why__icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
           </div>
-          <h3>44 Languages</h3>
-          <p>Localized for users worldwide. Airclap speaks your language.</p>
+          <h3 data-i18n="why6_title">44 Languages</h3>
+          <p data-i18n="why6_desc">Localized for users worldwide. Airclap speaks your language.</p>
         </div>
       </div>
     </div>
@@ -324,7 +328,7 @@
 
   <!-- Testimonials -->
   <section class="testimonials" data-animate>
-    <h2 class="section__title">Loved by users worldwide</h2>
+    <h2 class="section__title" data-i18n="testimonials_title">Loved by users worldwide</h2>
 
     <!-- Row 1: scrolls left -->
     <div class="marquee">
@@ -457,8 +461,8 @@
   <section class="download" id="download" data-animate>
     <div class="container container--narrow">
       <div class="download__glow"></div>
-      <h2 class="download__title">Get Airclap</h2>
-      <p class="download__sub">Free download. No account required.</p>
+      <h2 class="download__title" data-i18n="dl_title">Get Airclap</h2>
+      <p class="download__sub" data-i18n="dl_sub">Free download. No account required.</p>
       <div class="download__badges">
         <a href="https://apps.apple.com/us/app/airclap/id6467128147" target="_blank" rel="noreferrer noopener">
           <img src="https://github.com/Gentleflow/Airclap/raw/main/images/ios.webp" alt="Download on the App Store" class="download__badge">
@@ -484,7 +488,7 @@
           <img src="z-images/app-icon.webp" alt="Airclap" width="28" height="28">
           <span>Airclap</span>
         </div>
-        <span class="footer__copy">&copy; 2026 Airclap. All rights reserved.</span>
+        <span class="footer__copy" data-i18n="footer_copy">&copy; 2026 Airclap. All rights reserved.</span>
         <div class="footer__links">
           <a href="https://github.com/Gentleflow/Airclap" target="_blank" rel="noreferrer noopener">GitHub</a>
           <a href="mailto:gentleflowoverseas@gmail.com">Feedback</a>
@@ -596,32 +600,7 @@
     }, { threshold: 0.15 });
     document.querySelectorAll('[data-animate]').forEach(el => obs.observe(el));
 
-    // Platform-aware hero CTA
-    (function() {
-      const ua = navigator.userAgent || navigator.vendor || '';
-      const p = navigator.platform || '';
-      let text = 'Download Free';
-      let href = '#download';
-
-      if (/iPhone|iPad|iPod/.test(ua)) {
-        text = 'Download for iPhone';
-        href = 'https://apps.apple.com/us/app/airclap/id6467128147';
-      } else if (/Mac/.test(p) && !/iPhone/.test(ua)) {
-        text = 'Download for Mac';
-        href = 'https://apps.apple.com/us/app/airclap/id6467128147';
-      } else if (/Win/.test(p)) {
-        text = 'Download for Windows';
-        href = 'https://www.microsoft.com/store/productId/9N19C4QDKR6D';
-      } else if (/Android/.test(ua)) {
-        text = 'Download for Android';
-        href = 'https://play.google.com/store/apps/details?id=tech.gentleflow.airclap.pro';
-      }
-
-      const btn = document.getElementById('heroBtn');
-      const btnText = document.getElementById('heroBtnText');
-      if (btn) btn.href = href;
-      if (btnText) btnText.textContent = text;
-    })();
+    // Platform-aware hero CTA is now handled by i18n.js
   </script>
 
 </body>
