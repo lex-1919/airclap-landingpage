@@ -1,731 +1,725 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Airclap - Send any file to any device</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Send any file to any device — cross-platform, ultra-fast and easy to use. Free file transfer between Mac, iOS, Windows, and Android devices over local network."
-        />
-        <link rel="canonical" href="https://airclap.app/" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airclap — Drop files between any device, instantly</title>
+  <meta name="description" content="Transfer files between Mac, iPhone, Windows and Android over local WiFi. No internet. No cables. No cloud. Free.">
+  <link rel="canonical" href="https://airclap.app/">
 
-        <!-- Open Graph -->
-        <meta
-            property="og:title"
-            content="Airclap - Send any file to any device"
-        />
-        <meta
-            property="og:description"
-            content="Send any file to any device — cross-platform, ultra-fast and easy to use. Free file transfer between Mac, iOS, Windows, and Android devices over local network."
-        />
-        <meta
-            property="og:image"
-            content="https://telegraph-image-b0a.pages.dev/file/fcf8b2939ca97ab1c03f5.jpg"
-        />
-        <meta property="og:url" content="https://airclap.app" />
-        <meta property="og:site_name" content="Airclap" />
-        <meta property="og:type" content="website" />
+  <meta property="og:title" content="Airclap — Drop files between any device, instantly">
+  <meta property="og:description" content="Transfer files between Mac, iPhone, Windows and Android over local WiFi. No internet. No cables. No cloud.">
+  <meta property="og:image" content="https://telegraph-image-b0a.pages.dev/file/fcf8b2939ca97ab1c03f5.jpg">
+  <meta property="og:url" content="https://airclap.app/">
+  <meta property="og:site_name" content="Airclap">
+  <meta property="og:type" content="website">
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-            name="twitter:title"
-            content="Airclap - Send any file to any device"
-        />
-        <meta
-            name="twitter:description"
-            content="Send any file to any device — cross-platform, ultra-fast and easy to use. Free file transfer between Mac, iOS, Windows, and Android devices over local network."
-        />
-        <meta
-            name="twitter:image"
-            content="https://telegraph-image-b0a.pages.dev/file/fcf8b2939ca97ab1c03f5.jpg"
-        />
-        <meta name="twitter:image:alt" content="Airclap" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Airclap — Drop files between any device, instantly">
+  <meta name="twitter:description" content="Transfer files between Mac, iPhone, Windows and Android over local WiFi. No internet. No cables. No cloud.">
+  <meta name="twitter:image" content="https://telegraph-image-b0a.pages.dev/file/fcf8b2939ca97ab1c03f5.jpg">
 
-        <style data-tag="reset-style-sheet">
-            html {
-                line-height: 1.15;
-            }
-            body {
-                margin: 0;
-            }
-            * {
-                box-sizing: border-box;
-                border-width: 0;
-                border-style: solid;
-            }
-            p,
-            li,
-            ul,
-            pre,
-            div,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6,
-            figure,
-            blockquote,
-            figcaption {
-                margin: 0;
-                padding: 0;
-            }
-            button {
-                background-color: transparent;
-            }
-            button,
-            input,
-            optgroup,
-            select,
-            textarea {
-                font-family: inherit;
-                font-size: 100%;
-                line-height: 1.15;
-                margin: 0;
-            }
-            button,
-            select {
-                text-transform: none;
-            }
-            button,
-            [type="button"],
-            [type="reset"],
-            [type="submit"] {
-                -webkit-appearance: button;
-            }
-            button::-moz-focus-inner,
-            [type="button"]::-moz-focus-inner,
-            [type="reset"]::-moz-focus-inner,
-            [type="submit"]::-moz-focus-inner {
-                border-style: none;
-                padding: 0;
-            }
-            button:-moz-focus,
-            [type="button"]:-moz-focus,
-            [type="reset"]:-moz-focus,
-            [type="submit"]:-moz-focus {
-                outline: 1px dotted ButtonText;
-            }
-            a {
-                color: inherit;
-                text-decoration: inherit;
-            }
-            input {
-                padding: 2px 4px;
-            }
-            img {
-                display: block;
-            }
-            html {
-                scroll-behavior: smooth;
-            }
-        </style>
-        <style data-tag="default-style-sheet">
-            html {
-                font-family: Inter;
-                font-size: 16px;
-            }
+  <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <script src="./i18n.js" defer></script>
 
-            body {
-                font-weight: 400;
-                font-style: normal;
-                text-decoration: none;
-                text-transform: none;
-                letter-spacing: normal;
-                line-height: 1.15;
-                color: var(--dl-color-gray-black);
-                background-color: var(--dl-color-gray-white);
-            }
-        </style>
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/animate.css@4.1.1/animate.css"
-        />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-            data-tag="font"
-        />
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-        />
-        <!-- Google tag (gtag.js) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Airclap",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": ["macOS", "iOS", "Windows", "Android"],
+      "description": "Free cross-platform file transfer tool. Send any file to any device over local network — supports Mac, iOS, Windows, and Android with ultra-fast LAN transfers.",
+      "url": "https://airclap.app",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": [
+        "https://apps.apple.com/us/app/airclap/id6467128147",
+        "https://play.google.com/store/apps/details?id=tech.gentleflow.airclap.pro",
+        "https://apps.microsoft.com/detail/9n19c4qdkr6d"
+      ],
+      "screenshot": "https://telegraph-image-b0a.pages.dev/file/fcf8b2939ca97ab1c03f5.jpg",
+      "featureList": [
+        "Cross-platform file transfer",
+        "LAN-based transfers without internet",
+        "Drag and drop interface",
+        "No file size limits",
+        "Text content sharing",
+        "Multiple file format support"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "ratingCount": "100",
+        "bestRating": "5"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Gentleflow"
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Gentleflow",
+      "url": "https://airclap.app",
+      "logo": "https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/app-icon.webp",
+      "sameAs": [
+        "https://www.producthunt.com/products/airclap",
+        "https://www.youtube.com/@lianglu6037",
+        "https://x.com/airclap_app",
+        "https://github.com/Gentleflow/Airclap"
+      ]
+    }
+  </script>
 
-        <script
-            async=""
-            src="https://www.googletagmanager.com/gtag/js?id=G-8BEFVXFLED"
-        ></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Airclap really free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Core file transfer is completely free — no account, no limits on file types. Pro unlocks unlimited transfers, folder sharing, and more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is Airclap different from AirDrop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AirDrop only works between Apple devices. Airclap works between any combination — Mac to Android, iPhone to Windows, anything to anything."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Airclap safe? Where do my files go?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Files transfer directly between your devices over local WiFi. Nothing goes to any server. We collect zero data. Your files stay yours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do both devices need the Airclap app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, install Airclap on both devices. They find each other automatically on the same WiFi — no pairing or setup needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast is Airclap's file transfer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As fast as your WiFi allows — over 200% faster than AirDrop in our tests. Most files arrive in seconds, even large ones."
+          }
+        }
+      ]
+    }
+  </script>
 
-            gtag("config", "G-8BEFVXFLED");
-        </script>
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "SoftwareApplication",
-                "name": "Airclap",
-                "applicationCategory": "UtilitiesApplication",
-                "operatingSystem": ["macOS", "iOS", "Windows", "Android"],
-                "description": "Free cross-platform file transfer tool. Send any file to any device over local network — supports Mac, iOS, Windows, and Android with ultra-fast LAN transfers.",
-                "url": "https://airclap.app",
-                "offers": {
-                    "@type": "Offer",
-                    "price": "0",
-                    "priceCurrency": "USD"
-                },
-                "downloadUrl": [
-                    "https://apps.apple.com/us/app/airclap/id6467128147",
-                    "https://play.google.com/store/apps/details?id=tech.gentleflow.airclap.pro",
-                    "https://apps.microsoft.com/detail/9n19c4qdkr6d"
-                ],
-                "screenshot": "https://telegraph-image-b0a.pages.dev/file/fcf8b2939ca97ab1c03f5.jpg",
-                "featureList": [
-                    "Cross-platform file transfer",
-                    "LAN-based transfers without internet",
-                    "Drag and drop interface",
-                    "No file size limits",
-                    "Text content sharing",
-                    "Multiple file format support"
-                ]
-            }
-        </script>
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                "name": "Airclap",
-                "url": "https://airclap.app",
-                "logo": "https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/app-icon.webp",
-                "sameAs": [
-                    "https://www.producthunt.com/products/airclap",
-                    "https://www.youtube.com/@AirclapApp"
-                ]
-            }
-        </script>
-    </head>
-    <body>
-        <link rel="stylesheet" href="./style.css" />
-        <div>
-            <link href="./index.css" rel="stylesheet" />
-            <div class="airclap-send-any-file-to-any-device-container">
-                <div class="airclap-send-any-file-to-any-device-container01">
-                    <div
-                        class="airclap-send-any-file-to-any-device-container02"
-                    >
-                        <div
-                            class="logo-group-container logo-group-root-class-name"
-                        >
-                            <img
-                                src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/app-icon.webp"
-                                loading="eager"
-                                class="logo-group-image"
-                            />
-                            <div class="logo-group-container1">
-                                <div class="logo-group-container2">
-                                    <span class="logo-group-text"
-                                        ><span>Airclap</span></span
-                                    ><img
-                                        src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/star.webp"
-                                        loading="eager"
-                                        class="logo-group-image1"
-                                    />
-                                </div>
-                                <span class="logo-group-text1"
-                                    ><span>airclap.app</span></span
-                                >
-                            </div>
-                        </div>
-                        <div
-                            class="airclap-send-any-file-to-any-device-container03"
-                        >
-                            <span
-                                class="airclap-send-any-file-to-any-device-text"
-                                ><span>Send Any File to Any</span><br /><span
-                                    >Device</span
-                                ></span
-                            ><span
-                                class="airclap-send-any-file-to-any-device-text04"
-                                >A tool for free file transfer between Mac, iOS,
-                                Windows, and Android devices within the same
-                                local network.</span
-                            >
-                        </div>
-                        <a
-                            href="https://www.producthunt.com/posts/airclap?embed=true&utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-airclap"
-                            target="_blank"
-                            ><img
-                                src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=466247&theme=light&period=daily"
-                                alt="Airclap - Send&#0032;any&#0032;file&#0032;to&#0032;any&#0032;device | Product Hunt"
-                                style="
-                                    width: 250px;
-                                    height: 54px;
-                                    margin-top: 20px;
-                                "
-                                width="250"
-                                height="54"
-                        /></a>
-                    </div>
-                    <div
-                        class="airclap-send-any-file-to-any-device-container04"
-                    >
-                        <a
-                            href="https://apps.apple.com/us/app/airclap/id6467128147"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            class="airclap-send-any-file-to-any-device-link"
-                            ><div
-                                class="airclap-send-any-file-to-any-device-cta"
-                            >
-                                <div
-                                    class="airclap-send-any-file-to-any-device-container05"
-                                >
-                                    <img
-                                        src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/apple.webp"
-                                        loading="eager"
-                                        class="airclap-send-any-file-to-any-device-system"
-                                    /><span
-                                        class="airclap-send-any-file-to-any-device-content"
-                                        >Download for iOS</span
-                                    >
-                                </div>
-                                <img
-                                    src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/arrow-right.webp"
-                                    loading="eager"
-                                    class="airclap-send-any-file-to-any-device-arrow"
-                                /></div></a
-                        ><a
-                            href="https://play.google.com/store/apps/details?id=tech.gentleflow.airclap.pro"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            class="airclap-send-any-file-to-any-device-link1"
-                            ><div
-                                class="airclap-send-any-file-to-any-device-cta1"
-                            >
-                                <div
-                                    class="airclap-send-any-file-to-any-device-container06"
-                                >
-                                    <img
-                                        src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/android.webp"
-                                        loading="eager"
-                                        class="airclap-send-any-file-to-any-device-system1"
-                                    /><span
-                                        class="airclap-send-any-file-to-any-device-content1"
-                                        >Download for Android</span
-                                    >
-                                </div>
-                                <img
-                                    src="https://i.ibb.co/RHpF2rS/arrow-right.webp"
-                                    loading="eager"
-                                    class="airclap-send-any-file-to-any-device-arrow1"
-                                /></div></a
-                        ><a
-                            href="https://apps.apple.com/us/app/airclap/id6467128147"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            class="airclap-send-any-file-to-any-device-link2"
-                            ><div
-                                class="airclap-send-any-file-to-any-device-cta2"
-                            >
-                                <div
-                                    class="airclap-send-any-file-to-any-device-container07"
-                                >
-                                    <img
-                                        src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/mac.webp"
-                                        loading="eager"
-                                        class="airclap-send-any-file-to-any-device-system2"
-                                    /><span
-                                        class="airclap-send-any-file-to-any-device-content2"
-                                        >Download for Mac</span
-                                    >
-                                </div>
-                                <img
-                                    src="https://i.ibb.co/RHpF2rS/arrow-right.webp"
-                                    loading="eager"
-                                    class="airclap-send-any-file-to-any-device-arrow2"
-                                /></div></a
-                        ><a
-                            href="https://apps.microsoft.com/detail/9n19c4qdkr6d"
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            class="airclap-send-any-file-to-any-device-link3"
-                            ><div
-                                class="airclap-send-any-file-to-any-device-cta3"
-                            >
-                                <div
-                                    class="airclap-send-any-file-to-any-device-container08"
-                                >
-                                    <img
-                                        src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/windows.webp"
-                                        loading="eager"
-                                        class="airclap-send-any-file-to-any-device-system3"
-                                    /><span
-                                        class="airclap-send-any-file-to-any-device-content3"
-                                        >Download for Windows</span
-                                    >
-                                </div>
-                                <img
-                                    src="https://i.ibb.co/RHpF2rS/arrow-right.webp"
-                                    loading="eager"
-                                    class="airclap-send-any-file-to-any-device-arrow3"
-                                /></div
-                        ></a>
-                    </div>
-                </div>
-                <div class="airclap-send-any-file-to-any-device-container09">
-                    <div
-                        class="airclap-send-any-file-to-any-device-container10"
-                    >
-                        <div
-                            class="airclap-send-any-file-to-any-device-container11"
-                        >
-                            <img
-                                src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/transfer.webp"
-                                loading="eager"
-                                class="airclap-send-any-file-to-any-device-image"
-                            />
-                            <div
-                                class="airclap-send-any-file-to-any-device-container12"
-                            >
-                                <span
-                                    class="airclap-send-any-file-to-any-device-text05"
-                                    >Seamless Cross-System File Transfer</span
-                                ><span
-                                    class="airclap-send-any-file-to-any-device-text06"
-                                    >Cutting-Edge LAN cross-platform transfers:
-                                    say goodbye to 'transfer assistants' on four
-                                    major operating systems.</span
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="airclap-send-any-file-to-any-device-container13"
-                    >
-                        <div
-                            class="airclap-send-any-file-to-any-device-container14"
-                        >
-                            <div
-                                class="airclap-send-any-file-to-any-device-container15"
-                            >
-                                <span
-                                    class="airclap-send-any-file-to-any-device-text07"
-                                    >Intuitive and Straightforward Sending
-                                    Experience</span
-                                ><span
-                                    class="airclap-send-any-file-to-any-device-text08"
-                                    >Install the app, open, drag and drop to
-                                    send, with support for text content.</span
-                                >
-                            </div>
-                            <img
-                                alt="image"
-                                src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/send.webp"
-                                loading="eager"
-                                class="airclap-send-any-file-to-any-device-image1"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        class="airclap-send-any-file-to-any-device-container16"
-                    >
-                        <div
-                            class="airclap-send-any-file-to-any-device-container17"
-                        >
-                            <img
-                                alt="image"
-                                src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/histroy.webp"
-                                loading="eager"
-                                class="airclap-send-any-file-to-any-device-image2"
-                            />
-                            <div
-                                class="airclap-send-any-file-to-any-device-container18"
-                            >
-                                <span
-                                    class="airclap-send-any-file-to-any-device-text09"
-                                    >Clear file reception records page</span
-                                ><span
-                                    class="airclap-send-any-file-to-any-device-text10"
-                                    >Pop on start, real-time status, abundant
-                                    shortcuts.</span
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="airclap-send-any-file-to-any-device-container19"
-                    >
-                        <div
-                            class="airclap-send-any-file-to-any-device-container20"
-                        >
-                            <div
-                                class="airclap-send-any-file-to-any-device-container21"
-                            >
-                                <span
-                                    class="airclap-send-any-file-to-any-device-text11"
-                                    >Supports a variety of file formats for
-                                    transfer.</span
-                                ><span
-                                    class="airclap-send-any-file-to-any-device-text12"
-                                    >No format restrictions, clear format
-                                    previews.</span
-                                >
-                            </div>
-                            <img
-                                alt="image"
-                                src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/format.webp"
-                                loading="eager"
-                                class="airclap-send-any-file-to-any-device-image3"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        class="airclap-send-any-file-to-any-device-container22"
-                    >
-                        <div
-                            class="airclap-send-any-file-to-any-device-container23"
-                        >
-                            <img
-                                alt="image"
-                                src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/Pro.webp"
-                                loading="eager"
-                                class="airclap-send-any-file-to-any-device-image4"
-                            />
-                        </div>
-                    </div>
-                    <div
-                        class="airclap-send-any-file-to-any-device-container24"
-                    >
-                        <div
-                            class="airclap-send-any-file-to-any-device-container25"
-                        >
-                            <img
-                                alt="image"
-                                src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/fusion.webp"
-                                loading="eager"
-                                class="airclap-send-any-file-to-any-device-image5"
-                            />
-                            <div
-                                class="airclap-send-any-file-to-any-device-container26"
-                            >
-                                <span
-                                    class="airclap-send-any-file-to-any-device-text13"
-                                    ><span>Enjoy your life,</span><br /><span
-                                        >don't waste time on file
-                                        transfers.</span
-                                    ></span
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="airclap-send-any-file-to-any-device-container27"
-                    >
-                        <div
-                            class="airclap-send-any-file-to-any-device-container28"
-                        >
-                            <img
-                                alt="image"
-                                src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/mockup.webp"
-                                loading="eager"
-                                class="airclap-send-any-file-to-any-device-image6"
-                            />
-                            <div
-                                class="airclap-send-any-file-to-any-device-container29"
-                                style="align-items: flex-start"
-                            >
-                                <div
-                                    class="airclap-send-any-file-to-any-device-container30"
-                                >
-                                    <div class="logo-group-container">
-                                        <img
-                                            src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/app-icon.webp"
-                                            loading="eager"
-                                            class="logo-group-image"
-                                        />
-                                        <div class="logo-group-container1">
-                                            <div class="logo-group-container2">
-                                                <span class="logo-group-text"
-                                                    ><span>Airclap</span></span
-                                                ><img
-                                                    src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/star.webp"
-                                                    loading="eager"
-                                                    class="logo-group-image1"
-                                                />
-                                            </div>
-                                            <span class="logo-group-text1"
-                                                ><span>airclap.app</span></span
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    class="airclap-send-any-file-to-any-device-container31"
-                                >
-                                    <div
-                                        class="airclap-send-any-file-to-any-device-container32"
-                                    >
-                                        <a
-                                            href="https://apps.apple.com/us/app/airclap/id6467128147"
-                                            target="_blank"
-                                            rel="noreferrer noopener"
-                                            class="airclap-send-any-file-to-any-device-link4"
-                                            ><div
-                                                class="airclap-send-any-file-to-any-device-cta4"
-                                            >
-                                                <div
-                                                    class="airclap-send-any-file-to-any-device-container33"
-                                                >
-                                                    <img
-                                                        src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/apple.webp"
-                                                        loading="eager"
-                                                        class="airclap-send-any-file-to-any-device-system4"
-                                                    /><span
-                                                        class="airclap-send-any-file-to-any-device-content4"
-                                                        >Download for iOS</span
-                                                    >
-                                                </div>
-                                                <img
-                                                    src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/arrow-right.webp"
-                                                    loading="eager"
-                                                    class="airclap-send-any-file-to-any-device-arrow4"
-                                                /></div></a
-                                        ><a
-                                            href="https://play.google.com/store/apps/details?id=tech.gentleflow.airclap.pro"
-                                            target="_blank"
-                                            rel="noreferrer noopener"
-                                            class="airclap-send-any-file-to-any-device-link5"
-                                            ><div
-                                                class="airclap-send-any-file-to-any-device-cta5"
-                                            >
-                                                <div
-                                                    class="airclap-send-any-file-to-any-device-container34"
-                                                >
-                                                    <img
-                                                        src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/android.webp"
-                                                        loading="eager"
-                                                        class="airclap-send-any-file-to-any-device-system5"
-                                                    /><span
-                                                        class="airclap-send-any-file-to-any-device-content5"
-                                                        >Download for
-                                                        Android</span
-                                                    >
-                                                </div>
-                                                <img
-                                                    src="https://i.ibb.co/RHpF2rS/arrow-right.webp"
-                                                    loading="eager"
-                                                    class="airclap-send-any-file-to-any-device-arrow5"
-                                                /></div></a
-                                        ><a
-                                            href="https://apps.apple.com/us/app/airclap/id6467128147"
-                                            target="_blank"
-                                            rel="noreferrer noopener"
-                                            class="airclap-send-any-file-to-any-device-link6"
-                                            ><div
-                                                class="airclap-send-any-file-to-any-device-cta6"
-                                            >
-                                                <div
-                                                    class="airclap-send-any-file-to-any-device-container35"
-                                                >
-                                                    <img
-                                                        src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/mac.webp"
-                                                        loading="eager"
-                                                        class="airclap-send-any-file-to-any-device-system6"
-                                                    /><span
-                                                        class="airclap-send-any-file-to-any-device-content6"
-                                                        >Download for Mac</span
-                                                    >
-                                                </div>
-                                                <img
-                                                    src="https://i.ibb.co/RHpF2rS/arrow-right.webp"
-                                                    loading="eager"
-                                                    class="airclap-send-any-file-to-any-device-arrow6"
-                                                /></div></a
-                                        ><a
-                                            href="https://apps.microsoft.com/detail/9n19c4qdkr6d"
-                                            target="_blank"
-                                            rel="noreferrer noopener"
-                                            class="airclap-send-any-file-to-any-device-link7"
-                                            ><div
-                                                class="airclap-send-any-file-to-any-device-cta7"
-                                            >
-                                                <div
-                                                    class="airclap-send-any-file-to-any-device-container36"
-                                                >
-                                                    <img
-                                                        src="https://github.com/lex-1919/airclap-landingpage/raw/main/z-images/windows.webp"
-                                                        loading="eager"
-                                                        class="airclap-send-any-file-to-any-device-system7"
-                                                    /><span
-                                                        class="airclap-send-any-file-to-any-device-content7"
-                                                        >Download for
-                                                        Windows</span
-                                                    >
-                                                </div>
-                                                <img
-                                                    src="https://i.ibb.co/RHpF2rS/arrow-right.webp"
-                                                    loading="eager"
-                                                    class="airclap-send-any-file-to-any-device-arrow7"
-                                                /></div
-                                        ></a>
-                                    </div>
-                                </div>
-                                <a
-                                    href="https://www.producthunt.com/posts/airclap?embed=true&utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-airclap"
-                                    target="_blank"
-                                    ><img
-                                        src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=466247&theme=light&period=daily"
-                                        alt="Airclap - Send&#0032;any&#0032;file&#0032;to&#0032;any&#0032;device | Product Hunt"
-                                        style="
-                                            width: 250px;
-                                            height: 54px;
-                                            margin-top: 20px;
-                                        "
-                                        width="250"
-                                        height="54"
-                                /></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="airclap-send-any-file-to-any-device-container37"
-                    >
-                        <div
-                            class="airclap-send-any-file-to-any-device-container38"
-                        >
-                            <span
-                                class="airclap-send-any-file-to-any-device-text17"
-                                ><span
-                                    >© Airclap 2026. All rights reserved</span
-                                ><br
-                            /></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BEFVXFLED"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8BEFVXFLED');
+  </script>
+</head>
+<body>
+
+  <!-- Dot grid canvas -->
+  <canvas id="dotGrid"></canvas>
+
+  <!-- Background grain + glow -->
+  <div class="bg-noise"></div>
+  <div class="bg-glow bg-glow--hero"></div>
+  <div class="bg-glow bg-glow--mid"></div>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="z-images/app-icon.webp" alt="Airclap" width="36" height="36">
+        <span>Airclap</span>
+      </a>
+      <div class="nav__right">
+        <div class="lang-switcher"></div>
+        <a href="#download" class="nav__cta" data-i18n="nav_cta">Download Free</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <a href="https://www.producthunt.com/posts/airclap?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-airclap" target="_blank" rel="noreferrer noopener" class="ph-badge">
+          <span class="ph-badge__shimmer"></span>
+          <span class="ph-badge__glow"></span>
+          <svg class="ph-badge__logo" width="26" height="26" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#FF6154"/><path d="M22.667 13H16v14h4v-4.667h2.667a4.667 4.667 0 000-9.333zm0 5.333H20V17h2.667a1.333 1.333 0 110 1.333z" fill="#fff"/></svg>
+          <span class="ph-badge__text">
+            <span class="ph-badge__rank">#1 Product of the Day</span>
+            <span class="ph-badge__source">Product Hunt</span>
+          </span>
+          <svg class="ph-badge__trophy" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9a6 6 0 1012 0V4H6v5z" fill="#FF6154"/><path d="M6 7H3a1 1 0 00-1 1v1a4 4 0 004 4M18 7h3a1 1 0 011 1v1a4 4 0 01-4 4M9 21h6M12 17v4" stroke="#FF6154" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <h1 class="hero__title">
+          <span data-i18n="hero_title_1">Drop files between</span><br>
+          <span class="hero__title--accent" data-i18n="hero_title_accent">any device.</span> <span data-i18n="hero_title_2">Instantly.</span>
+        </h1>
+        <p class="hero__sub" data-i18n="hero_sub">
+          Transfer files between Mac, iPhone, Windows and Android<br class="hide-mobile">
+          over local WiFi. No internet. No cables. No cloud.
+        </p>
+        <div class="hero__actions">
+          <a href="#download" class="btn btn--primary" id="heroBtn">
+            <span class="btn__icon" id="heroBtnIcon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </span>
+            <span id="heroBtnText" data-i18n="hero_btn">Download Free</span>
+          </a>
+          <span class="hero__hint" data-i18n="hero_hint">Free &middot; No account needed &middot; Works in 30 seconds</span>
         </div>
-        <script
-            type="text/javascript"
-            src="https://www.googletagmanager.com/gtag/js?id=G-8BEFVXFLED"
-            async=""
-        ></script>
-        <script type="text/javascript">
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
+      </div>
+      <div class="hero__visual">
+        <div class="hero__visual-glow"></div>
+        <img src="z-images/display.webp" alt="Airclap app interface showing cross-platform file transfer" class="hero__image" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Strip -->
+  <section class="trust" data-animate>
+    <div class="container">
+      <div class="trust__grid">
+        <div class="trust__item">
+          <span class="trust__number">120+</span>
+          <span class="trust__label" data-i18n="trust_countries">Countries</span>
+        </div>
+        <div class="trust__divider"></div>
+        <div class="trust__item">
+          <span class="trust__number">4</span>
+          <span class="trust__label" data-i18n="trust_platforms">Platforms</span>
+        </div>
+        <div class="trust__divider"></div>
+        <div class="trust__item">
+          <span class="trust__number">5.0</span>
+          <span class="trust__label" data-i18n="trust_appstore">App Store</span>
+        </div>
+        <div class="trust__divider"></div>
+        <div class="trust__item">
+          <span class="trust__number">#1</span>
+          <span class="trust__label" data-i18n="trust_producthunt">Product Hunt</span>
+        </div>
+        <div class="trust__divider"></div>
+        <div class="trust__item">
+          <span class="trust__number">44</span>
+          <span class="trust__label" data-i18n="trust_languages">Languages</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem → Solution -->
+  <section class="problem" data-animate>
+    <div class="container container--narrow">
+      <p class="problem__text" data-i18n="problem_text">
+        <a href="/alternatives/airdrop.html" class="problem__link">AirDrop is Apple-only</a>. Nearby Share is Android-only.<br class="hide-mobile">
+        USB cables are 2005. Emailing files to yourself is embarrassing.
+      </p>
+      <p class="problem__answer" data-i18n="problem_answer">There's a better way.</p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="container">
+
+      <div class="feature" data-animate>
+        <div class="feature__text">
+          <span class="feature__tag" data-i18n="feat1_tag">Cross-Platform</span>
+          <h2 class="feature__title" data-i18n="feat1_title">Works across every device you own</h2>
+          <p class="feature__desc" data-i18n="feat1_desc">Mac to Android. iPhone to Windows. Any combination, any direction. Open Airclap on both devices — they find each other automatically.</p>
+        </div>
+        <div class="feature__visual">
+          <img src="z-images/transfer.webp" alt="Cross-platform file transfer between devices" loading="lazy" width="933" height="984">
+        </div>
+      </div>
+
+      <div class="feature feature--reverse" data-animate>
+        <div class="feature__text">
+          <span class="feature__tag" data-i18n="feat2_tag">Dead Simple</span>
+          <h2 class="feature__title" data-i18n="feat2_title">Drag. Drop. Done.</h2>
+          <p class="feature__desc" data-i18n="feat2_desc">No accounts, no pairing codes, no configuration. Drag files onto Airclap, pick the device, and watch them arrive in seconds. Supports text sharing too.</p>
+        </div>
+        <div class="feature__visual">
+          <img src="z-images/send.webp" alt="Drag and drop file sending interface" loading="lazy" width="933" height="984">
+        </div>
+      </div>
+
+      <div class="feature" data-animate>
+        <div class="feature__text">
+          <span class="feature__tag" data-i18n="feat3_tag">Transfer History</span>
+          <h2 class="feature__title" data-i18n="feat3_title">Every file, accounted for</h2>
+          <p class="feature__desc" data-i18n="feat3_desc">Real-time transfer status, complete history, and quick access to received files. Never lose track of what you sent or received.</p>
+        </div>
+        <div class="feature__visual">
+          <img src="z-images/histroy.webp" alt="File transfer history and records" loading="lazy" width="933" height="1170">
+        </div>
+      </div>
+
+      <div class="feature feature--reverse" data-animate>
+        <div class="feature__text">
+          <span class="feature__tag" data-i18n="feat4_tag">Any Format</span>
+          <h2 class="feature__title" data-i18n="feat4_title">Photos, videos, ZIPs, whatever</h2>
+          <p class="feature__desc" data-i18n="feat4_desc">No file type restrictions. No compression. Your files arrive exactly as they left — original quality, full size, format previews included.</p>
+        </div>
+        <div class="feature__visual">
+          <img src="z-images/format.webp" alt="Multiple file format support" loading="lazy" width="933" height="984">
+        </div>
+      </div>
+
+      <div class="feature" data-animate>
+        <div class="feature__text">
+          <span class="feature__tag" data-i18n="feat5_tag">Auto Discovery</span>
+          <h2 class="feature__title" data-i18n="feat5_title">Zero setup. Instant connection.</h2>
+          <p class="feature__desc" data-i18n="feat5_desc">Open Airclap on any device — it automatically discovers nearby devices on the same WiFi. No pairing codes, no QR scans, no manual IP addresses. Just open and go.</p>
+        </div>
+        <div class="feature__visual">
+          <img src="z-images/mockup.webp" alt="Automatic device discovery on mobile and desktop" loading="lazy" width="1188" height="1188">
+        </div>
+      </div>
+
+      <!-- Key differentiators (merged from Why Airclap) -->
+      <div class="features__highlights" data-animate>
+        <div class="highlight">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18.36 6.64a9 9 0 11-12.73 0"/><line x1="12" y1="2" x2="12" y2="12"/></svg>
+          <div>
+            <strong data-i18n="hl1_title">No Internet Required</strong>
+            <span data-i18n="hl1_desc">Works entirely over local WiFi. Files never touch any server.</span>
+          </div>
+        </div>
+        <div class="highlight">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <div>
+            <strong data-i18n="hl2_title">200% Faster</strong>
+            <span data-i18n="hl2_desc">Transfers at full WiFi speed. A 1GB file in seconds — no cloud bottleneck.</span>
+          </div>
+        </div>
+        <div class="highlight">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <div>
+            <strong data-i18n="hl3_title">Private by Design</strong>
+            <span data-i18n="hl3_desc">No accounts, no cloud, no data collection. We don't know what you send.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="steps" data-animate>
+    <div class="container container--narrow">
+      <h2 class="section__title" data-i18n="steps_title">Three steps. That's it.</h2>
+      <div class="steps__grid">
+        <div class="step">
+          <div class="step__num">1</div>
+          <h3 class="step__title" data-i18n="step1_title">Install</h3>
+          <p class="step__desc" data-i18n="step1_desc">Download Airclap on the devices you want to connect. Takes 10 seconds.</p>
+        </div>
+        <div class="step__arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step">
+          <div class="step__num">2</div>
+          <h3 class="step__title" data-i18n="step2_title">Drag & Drop</h3>
+          <p class="step__desc" data-i18n="step2_desc">Drag any file onto Airclap. Pick the destination device from the list.</p>
+        </div>
+        <div class="step__arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step">
+          <div class="step__num">3</div>
+          <h3 class="step__title" data-i18n="step3_title">Received</h3>
+          <p class="step__desc" data-i18n="step3_desc">File arrives at full speed over your local WiFi. No internet touched.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mid-page CTA -->
+  <section class="mid-cta" data-animate>
+    <div class="container container--narrow">
+      <a href="#download" class="btn btn--primary btn--lg">
+        <span class="btn__icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </span>
+        <span data-i18n="mid_cta_btn">Download Free</span>
+      </a>
+      <span class="mid-cta__hint" data-i18n="mid_cta_hint">Available on Mac, iOS, Windows & Android</span>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials" data-animate>
+    <h2 class="section__title" data-i18n="testimonials_title">Loved by users worldwide</h2>
+    <p class="section__sub" data-i18n="testimonials_source">From App Store, Product Hunt & our community</p>
+
+    <!-- Row 1: scrolls left -->
+    <div class="marquee">
+      <div class="marquee__track marquee__track--left">
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>A must-have for anyone who shares files</h3>
+          <p>If you're tired of waiting for files to share, here's your solution. It's undoubtedly the best option available right now.</p>
+          <span>&#127482;&#127480; IketBot</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>&#26368;&#22909;&#30340;&#23616;&#22495;&#32593;&#20256;&#36755;&#24037;&#20855;&#65281;</h3>
+          <p>&#30028;&#38754;&#28418;&#20142;&#65292;&#20256;&#36755;&#36895;&#24230;&#24555;&#65292;&#29992;&#36215;&#26469;&#24456;&#26041;&#20415;&#12290;&#22312;&#19981;&#21516;&#31995;&#32479;&#35774;&#22791;&#20043;&#38388;&#20256;&#25991;&#20214;&#20877;&#20063;&#19981;&#29992;&#28902;&#20102;&#12290;</p>
+          <span>&#127464;&#127475; Kakaki334</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>&#1056;&#1077;&#1089;&#1087;&#1077;&#1082;&#1090; &#1089;&#1086;&#1092;&#1090;&#1080;&#1085;&#1072;!</h3>
+          <p>&#1053;&#1080;&#1095;&#1077;&#1075;&#1086; &#1083;&#1091;&#1095;&#1096;&#1077; &#1077;&#1097;&#1077; &#1085;&#1077; &#1074;&#1080;&#1076;&#1077;&#1083;. &#1055;&#1088;&#1086;&#1089;&#1090;&#1086; &#1095;&#1091;&#1076;&#1086;! &#1053;&#1072;&#1082;&#1086;&#1085;&#1077;&#1094; &#1085;&#1086;&#1088;&#1084;&#1072;&#1083;&#1100;&#1085;&#1099;&#1081; &#1080;&#1085;&#1089;&#1090;&#1088;&#1091;&#1084;&#1077;&#1085;&#1090; &#1076;&#1083;&#1103; &#1087;&#1077;&#1088;&#1077;&#1076;&#1072;&#1095;&#1080; &#1092;&#1072;&#1081;&#1083;&#1086;&#1074;.</p>
+          <span>&#127479;&#127482; Pile_vin</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>USB&#12465;&#12540;&#12502;&#12523;&#12364;&#23436;&#20840;&#12395;&#19981;&#35201;&#12395;</h3>
+          <p>&#12459;&#12513;&#12521;&#12510;&#12531;&#12392;&#12375;&#12390;&#27598;&#26085;iPhone&#12363;&#12425;Windows&#12408;RAW&#12501;&#12449;&#12452;&#12523;&#12434;&#31227;&#21205;&#12375;&#12390;&#12356;&#12414;&#12377;&#12290;2GB&#20197;&#19978;&#12391;&#12418;&#12469;&#12463;&#12469;&#12463;&#36578;&#36865;&#12290;</p>
+          <span>&#127471;&#127477; TakuyaM_photo</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>Endlich ein AirDrop f&#252;r Windows</h3>
+          <p>Ich hab mir fr&#252;her Dateien per E-Mail geschickt wie ein H&#246;hlenmensch. Airclap findet meine Ger&#228;te sofort, kein Login, keine Cloud, kein Quatsch.</p>
+          <span>&#127465;&#127466; MaxBerlin_dev</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>Incr&#237;vel, simples e r&#225;pido</h3>
+          <p>Uso pra transferir arquivos do meu Android pro MacBook todo dia. Sem internet, sem fio, sem complica&#231;&#227;o. Melhor app da categoria.</p>
+          <span>&#127463;&#127479; Lucas_sp</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>&#51060;&#47088; &#50545;&#51012; &#52286;&#44256; &#51080;&#50632;&#49845;&#45768;&#45796;</h3>
+          <p>&#47589;&#44284; &#50500;&#51060;&#54256; &#49324;&#51060;&#50640;&#49436; &#54028;&#51068; &#50734;&#44592;&#44592;&#44032; &#45720; &#48520;&#54200;&#54664;&#45716;&#45936;, Airclap &#45909;&#48516;&#50640; &#50756;&#48317;&#54616;&#44172; &#54644;&#44208;&#46104;&#50632;&#49845;&#45768;&#45796;. UI&#46020; &#50696;&#49256;&#50836;!</p>
+          <span>&#127472;&#127479; minjae_kim</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>Parfait pour le bureau</h3>
+          <p>On a des Mac et des PC au bureau. Airclap a r&#233;gl&#233; tous nos probl&#232;mes de transfert. Rapide, fiable, et l'interface est superbe.</p>
+          <span>&#127467;&#127479; Antoine_dev</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Row 2: scrolls right -->
+    <div class="marquee">
+      <div class="marquee__track marquee__track--right">
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>&#1578;&#1591;&#1576;&#1610;&#1602; &#1585;&#1575;&#1574;&#1593;</h3>
+          <p>&#1578;&#1591;&#1576;&#1610;&#1602; &#1605;&#1605;&#1578;&#1575;&#1586; &#1580;&#1583;&#1575;&#1611; &#1604;&#1606;&#1602;&#1604; &#1575;&#1604;&#1605;&#1604;&#1601;&#1575;&#1578; &#1605;&#1606; &#1575;&#1604;&#1603;&#1605;&#1576;&#1610;&#1608;&#1578;&#1585; &#1573;&#1604;&#1609; &#1575;&#1604;&#1580;&#1608;&#1575;&#1604; &#1571;&#1608; &#1575;&#1604;&#1593;&#1603;&#1587;. &#1587;&#1585;&#1610;&#1593; &#1608;&#1587;&#1607;&#1604; &#1575;&#1604;&#1575;&#1587;&#1578;&#1582;&#1583;&#1575;&#1605;.</p>
+          <span>&#127480;&#127462; Cndmcmcm</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>So promising transfer tool</h3>
+          <p>So simple and fast with supporting all platforms. Exactly what I needed for my mixed device setup.</p>
+          <span>&#127466;&#127468; Mahmoud699</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>La mejor herramienta de transferencia</h3>
+          <p>Tengo un iPhone y un PC con Windows. Antes usaba el cable USB para todo. Airclap lo hace en segundos por WiFi, sin comprimir nada.</p>
+          <span>&#127466;&#127480; CarlosM_design</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>Fantastico, semplice e veloce</h3>
+          <p>Trasferisco foto dal telefono al Mac ogni giorno. Airclap &#232; velocissimo e l'interfaccia &#232; bellissima. Niente cloud, niente account.</p>
+          <span>&#127470;&#127481; Marco_Roma</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>Harika bir uygulama</h3>
+          <p>Android'den Mac'e dosya g&#246;ndermek hi&#231; bu kadar kolay olmam&#305;&#351;t&#305;. &#304;nternet bile gerekmiyor, kurulum s&#305;f&#305;r.</p>
+          <span>&#127481;&#127479; AhmetY_ist</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>&#3604;&#3637;&#3617;&#3634;&#3585;&#3654; &#3651;&#3594;&#3657;&#3591;&#3656;&#3634;&#3618;&#3626;&#3640;&#3604;&#3654;</h3>
+          <p>&#3626;&#3656;&#3591;&#3652;&#3615;&#3621;&#3660;&#3592;&#3634;&#3585;&#3617;&#3639;&#3629;&#3606;&#3639;&#3629;&#3652;&#3611;&#3588;&#3629;&#3617;&#3652;&#3604;&#3657;&#3648;&#3621;&#3618; &#3652;&#3617;&#3656;&#3605;&#3657;&#3629;&#3591;&#3651;&#3594;&#3657;&#3648;&#3609;&#3655;&#3605; &#3652;&#3617;&#3656;&#3605;&#3657;&#3629;&#3591;&#3626;&#3634;&#3618; USB &#3648;&#3619;&#3655;&#3623;&#3617;&#3634;&#3585;&#3654;</p>
+          <span>&#127481;&#127469; Somchai_bkk</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>Tuy&#7879;t v&#7901;i, nhanh v&#224; &#7893;n &#273;&#7883;nh</h3>
+          <p>Chuy&#7875;n file t&#7915; &#273;i&#7879;n tho&#7841;i sang m&#225;y t&#237;nh ch&#432;a bao gi&#7901; d&#7877; nh&#432; v&#7853;y. Giao di&#7879;n &#273;&#7865;p, t&#7889;c &#273;&#7897; c&#7921;c nhanh.</p>
+          <span>&#127483;&#127475; MinhTuan_hn</span>
+        </div>
+
+        <div class="tc">
+          <div class="tc__stars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#8fff19"><path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z"/></svg></div>
+          <h3>Precies wat ik zocht</h3>
+          <p>Eindelijk een app die gewoon werkt. Bestanden van mijn Windows-pc naar iPad in een paar seconden. Geen gedoe, geen cloud.</p>
+          <span>&#127475;&#127473; JeroenVD</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" data-animate>
+    <div class="container container--narrow">
+      <h2 class="section__title" data-i18n="faq_title">Frequently Asked Questions</h2>
+      <div class="faq__grid">
+        <details class="faq__item" open>
+          <summary class="faq__q" data-i18n="faq1_q">Is Airclap really free?</summary>
+          <p class="faq__a" data-i18n="faq1_a">Yes. Core file transfer is completely free — no account, no limits on file types. Pro unlocks unlimited transfers, folder sharing, and more.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q" data-i18n="faq2_q">How is this different from AirDrop?</summary>
+          <p class="faq__a" data-i18n="faq2_a">AirDrop only works between Apple devices. Airclap works between any combination — Mac to Android, iPhone to Windows, anything to anything.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q" data-i18n="faq3_q">Is it safe? Where do my files go?</summary>
+          <p class="faq__a" data-i18n="faq3_a">Files transfer directly between your devices over local WiFi. Nothing goes to any server. We collect zero data. Your files stay yours.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q" data-i18n="faq4_q">Do both devices need the app?</summary>
+          <p class="faq__a" data-i18n="faq4_a">Yes, install Airclap on both devices. They find each other automatically on the same WiFi — no pairing or setup needed.</p>
+        </details>
+        <details class="faq__item">
+          <summary class="faq__q" data-i18n="faq5_q">How fast is the transfer?</summary>
+          <p class="faq__a" data-i18n="faq5_a">As fast as your WiFi allows — over 200% faster than AirDrop in our tests. Most files arrive in seconds, even large ones.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="download" id="download" data-animate>
+    <div class="container container--narrow">
+      <div class="download__glow"></div>
+      <h2 class="download__title" data-i18n="dl_title">Get Airclap — it's free</h2>
+      <p class="download__sub" data-i18n="dl_sub">No account. No credit card. Works in 30 seconds.</p>
+      <div class="download__trust">
+        <span>⭐ 5.0 App Store</span>
+        <span>🏆 #1 Product Hunt</span>
+        <span>🌍 120+ <span data-i18n="trust_countries">Countries</span></span>
+      </div>
+      <div class="download__badges">
+        <a href="https://apps.apple.com/us/app/airclap/id6467128147" target="_blank" rel="noreferrer noopener">
+          <img src="public/badge-appstore.webp" alt="Download on the App Store" class="download__badge" width="398" height="120">
+        </a>
+        <a href="https://apps.apple.com/us/app/airclap/id6467128147" target="_blank" rel="noreferrer noopener">
+          <img src="public/badge-mac.webp" alt="Download on the Mac App Store" class="download__badge" width="398" height="120">
+        </a>
+        <a href="https://www.microsoft.com/store/productId/9N19C4QDKR6D" target="_blank" rel="noreferrer noopener">
+          <img src="public/badge-microsoft.webp" alt="Get it from Microsoft Store" class="download__badge" width="398" height="120">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=tech.gentleflow.airclap.pro" target="_blank" rel="noreferrer noopener">
+          <img src="public/badge-googleplay.webp" alt="Get it on Google Play" class="download__badge" width="398" height="120">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__col">
+          <div class="footer__brand">
+            <img src="z-images/app-icon.webp" alt="Airclap" width="28" height="28">
+            <span>Airclap</span>
+          </div>
+          <p class="footer__tagline" data-i18n="footer_tagline">Cross-platform file transfer.<br>Fast, private, free.</p>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading" data-i18n="footer_h_product">Product</h4>
+          <a href="#download" data-i18n="footer_download">Download</a>
+          <a href="/alternatives/airdrop.html" data-i18n="footer_alt_airdrop">AirDrop Alternative</a>
+          <a href="/vs/localsend.html" data-i18n="footer_vs_localsend">vs LocalSend</a>
+          <a href="https://github.com/Gentleflow/Airclap" target="_blank" rel="noreferrer noopener">GitHub</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading" data-i18n="footer_h_support">Support</h4>
+          <a href="mailto:gentleflowoverseas@gmail.com" data-i18n="footer_feedback">Feedback</a>
+          <a href="mailto:gentleflowoverseas@gmail.com" data-i18n="footer_contact">Contact</a>
+          <a href="https://www.youtube.com/@lianglu6037" target="_blank" rel="noreferrer noopener">YouTube</a>
+          <a href="https://x.com/airclap_app" target="_blank" rel="noreferrer noopener">X (Twitter)</a>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading" data-i18n="footer_h_legal">Legal</h4>
+          <a href="/privacy-policy.html" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="/terms-of-use.html" data-i18n="footer_terms">Terms of Use</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__copy" data-i18n="footer_copy">&copy; 2026 Airclap by Gentleflow. All rights reserved.</span>
+        <div class="footer__social">
+          <a href="https://github.com/Gentleflow/Airclap" target="_blank" rel="noreferrer noopener" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@lianglu6037" target="_blank" rel="noreferrer noopener" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://x.com/airclap_app" target="_blank" rel="noreferrer noopener" aria-label="X">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.producthunt.com/products/airclap" target="_blank" rel="noreferrer noopener" aria-label="Product Hunt">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.604 8.4h-3.405V12h3.405a1.8 1.8 0 000-3.6zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 14.4h-3.405V18H7.801V6h5.804a4.2 4.2 0 010 8.4z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dot grid with per-dot mouse interaction
+    (function() {
+      const canvas = document.getElementById('dotGrid');
+      if (!canvas || matchMedia('(pointer: coarse)').matches) return;
+      const ctx = canvas.getContext('2d');
+      const GAP = 28;
+      const BASE_R = 1;
+      const BASE_ALPHA = 0.07;
+      const MOUSE_RADIUS = 150;
+      let mouseX = -9999;
+      let mouseY = -9999;
+      let w, h;
+
+      function resize() {
+        w = window.innerWidth;
+        h = window.innerHeight;
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = w * dpr;
+        canvas.height = h * dpr;
+        canvas.style.width = w + 'px';
+        canvas.style.height = h + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+
+      function draw() {
+        ctx.clearRect(0, 0, w, h);
+
+        const mx = mouseX;
+        const my = mouseY;
+        const cols = Math.ceil(w / GAP) + 1;
+        const rows = Math.ceil(h / GAP) + 1;
+
+        for (let r = 0; r < rows; r++) {
+          for (let c = 0; c < cols; c++) {
+            const baseX = c * GAP;
+            const baseY = r * GAP;
+            const dx = baseX - mx;
+            const dy = baseY - my;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            let alpha = BASE_ALPHA;
+            let offsetX = 0;
+            let offsetY = 0;
+            let radius = BASE_R;
+
+            if (dist < MOUSE_RADIUS) {
+              const t = 1 - dist / MOUSE_RADIUS;
+              alpha = BASE_ALPHA + t * 0.18;
+              radius = BASE_R + t * 0.6;
+              const pushStrength = t * t * 6;
+              if (dist > 1) {
+                offsetX = (dx / dist) * pushStrength;
+                offsetY = (dy / dist) * pushStrength;
+              }
             }
-            gtag("js", new Date());
-            gtag("config", "G-8BEFVXFLED");
-        </script>
-    </body>
+
+            ctx.beginPath();
+            ctx.arc(baseX + offsetX, baseY + offsetY, radius, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(255,255,255,${alpha})`;
+            ctx.fill();
+          }
+        }
+
+        requestAnimationFrame(draw);
+      }
+
+      document.addEventListener('mousemove', function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+      document.addEventListener('mouseleave', function() {
+        mouseX = -9999;
+        mouseY = -9999;
+      });
+
+      let resizeTimer;
+      window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(resize, 200);
+      });
+
+      resize();
+      draw();
+    })();
+
+    // Duplicate marquee items for seamless loop
+    document.querySelectorAll('.marquee__track').forEach(track => {
+      const items = track.innerHTML;
+      track.innerHTML = items + items;
+    });
+
+    // Scroll-reveal animations
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-animate]').forEach(el => obs.observe(el));
+
+    // Platform-aware hero CTA is now handled by i18n.js
+  </script>
+
+</body>
 </html>

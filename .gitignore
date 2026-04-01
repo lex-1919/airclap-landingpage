@@ -1,0 +1,10 @@
+# Analysis reports (not for deployment)
+app-marketing-context.md
+aso-audit-report.md
+aso-keyword-optimization.md
+page-cro-report.md
+rating-prompt-strategy.md
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,84 +1,115 @@
 <!DOCTYPE html>
-<html lang="en"
-  ><head
-    ><title>404 - Not Found</title
-    ><meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    /><meta charset="utf-8" /><meta
-      property="twitter:card"
-      content="summary_large_image"
-    /><style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }</style
-    ><style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Airclap</title>
+  <meta name="robots" content="noindex">
+  <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #060608;
+      --bg-card: #111118;
+      --border: rgba(255,255,255,0.06);
+      --text: #ffffff;
+      --text-2: rgba(255,255,255,0.6);
+      --text-3: rgba(255,255,255,0.35);
+      --accent: #8fff19;
+      --accent-dim: rgba(143,255,25,0.12);
+      --radius: 16px;
+      --radius-sm: 10px;
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-font-smoothing: antialiased; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+    a { color: inherit; text-decoration: none; }
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
+    .nav { padding: 16px 0; border-bottom: 1px solid var(--border); }
+    .nav__inner { max-width: 880px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; }
+    .nav__logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 16px; }
+    .nav__logo img { border-radius: 8px; }
 
-      }</style
-    ><link
-      rel="stylesheet"
-      href="https://unpkg.com/animate.css@4.1.1/animate.css"
-    /><link
-      rel="shortcut icon"
-      href="public/favicon.ico"
-      type="icon/png"
-      sizes="32x32"
-    /><link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    /><link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-    /><!-- Google tag (gtag.js) -->
+    .content { flex: 1; display: flex; align-items: center; justify-content: center; padding: 80px 32px; }
+    .card { max-width: 520px; width: 100%; text-align: center; }
+    .code { font-size: 120px; font-weight: 800; line-height: 1; color: var(--accent); opacity: 0.15; margin-bottom: -16px; }
+    .title { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
+    .desc { font-size: 15px; color: var(--text-2); margin-bottom: 40px; }
+    .links { display: flex; flex-direction: column; gap: 12px; align-items: center; }
+    .links a {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 24px; border-radius: var(--radius-sm);
+      font-size: 14px; font-weight: 500; transition: all 0.2s;
+    }
+    .links .primary {
+      background: var(--accent); color: #000;
+    }
+    .links .primary:hover { opacity: 0.9; }
+    .links .secondary {
+      background: var(--bg-card); border: 1px solid var(--border); color: var(--text-2);
+    }
+    .links .secondary:hover { border-color: var(--accent); color: var(--text); }
+    .helpful { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
+    .helpful__title { font-size: 13px; font-weight: 600; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 16px; }
+    .helpful__grid { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .helpful__grid a {
+      padding: 10px 18px; border-radius: var(--radius-sm);
+      background: var(--bg-card); border: 1px solid var(--border);
+      font-size: 13px; color: var(--text-2); transition: all 0.2s;
+    }
+    .helpful__grid a:hover { border-color: var(--accent); color: var(--text); }
 
-    <script
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=G-8BEFVXFLED"
-    ></script
-    ><script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    .footer { padding: 24px 0; border-top: 1px solid var(--border); text-align: center; font-size: 13px; color: var(--text-3); }
 
-      gtag('config', 'G-8BEFVXFLED');
-    </script></head
-  ><body
-    ><link rel="stylesheet" href="./style.css" /><div
-      ><link href="./404.css" rel="stylesheet" /><div
-        class="not-found-container"
-        ><h3>OOPS! PAGE NOT FOUND</h3
-        ><div class="not-found-container1"
-          ><h1 class="not-found-text1">404</h1></div
-        ><div class="not-found-container2"
-          ><h2 class="not-found-text2"
-            >WE ARE SORRY, BUT THE PAGE YOU REQUESTED WAS NOT FOUND</h2
-          ></div
-        ></div
-      ></div
-    >
-    <script
-      type="text/javascript"
-      src="https://www.googletagmanager.com/gtag/js?id=G-8BEFVXFLED"
-      async=""
-    ></script
-    ><script type="text/javascript">
-      window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-8BEFVXFLED');
-    </script></body
-  ></html
->
+    @media (max-width: 600px) {
+      .code { font-size: 80px; }
+      .title { font-size: 22px; }
+      .content { padding: 60px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="z-images/app-icon.webp" alt="Airclap" width="32" height="32">
+        <span>Airclap</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <div class="card">
+      <div class="code">404</div>
+      <h1 class="title">This page doesn't exist</h1>
+      <p class="desc">The page you're looking for may have been moved or removed. Here's where you can go instead.</p>
+      <div class="links">
+        <a href="/" class="primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Back to Home
+        </a>
+        <a href="/#download" class="secondary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Airclap
+        </a>
+      </div>
+      <div class="helpful">
+        <div class="helpful__title">You might be looking for</div>
+        <div class="helpful__grid">
+          <a href="/alternatives/airdrop.html">AirDrop Alternative</a>
+          <a href="/vs/localsend.html">Airclap vs LocalSend</a>
+          <a href="/privacy-policy.html">Privacy Policy</a>
+          <a href="/terms-of-use.html">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    &copy; 2026 Airclap by Gentleflow
+  </footer>
+</body>
+</html>
