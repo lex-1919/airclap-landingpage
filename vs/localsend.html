@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airclap vs LocalSend — Honest Comparison (2026)</title>
+  <meta name="description" content="Comparing Airclap and LocalSend for cross-platform file transfer. See features, speed, design, and pricing side by side.">
+
+  <meta property="og:title" content="Airclap vs LocalSend — Honest Comparison (2026)">
+  <meta property="og:description" content="Comparing Airclap and LocalSend for cross-platform file transfer. See features, speed, design, and pricing side by side.">
+  <meta property="og:image" content="https://telegraph-image-b0a.pages.dev/file/fcf8b2939ca97ab1c03f5.jpg">
+  <meta property="og:url" content="https://airclap.app/vs/localsend">
+  <meta property="og:site_name" content="Airclap">
+  <meta property="og:type" content="article">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Airclap vs LocalSend — Honest Comparison (2026)">
+  <meta name="twitter:description" content="Comparing Airclap and LocalSend for cross-platform file transfer. See features, speed, design, and pricing side by side.">
+  <meta name="twitter:image" content="https://telegraph-image-b0a.pages.dev/file/fcf8b2939ca97ab1c03f5.jpg">
+
+  <link rel="shortcut icon" href="../public/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://airclap.app/vs/localsend">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is Airclap better than LocalSend?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on your priorities. Airclap offers a more polished user experience with faster transfer speeds and Vision Pro support. LocalSend is completely free and open source with Linux support. If you value design and speed, Airclap is better. If you need free and open source, LocalSend is better."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is LocalSend completely free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. LocalSend is 100% free and open source under the MIT license. There are no paid tiers, no ads, and no limits. Airclap offers a free tier with a 100MB file size cap, and a Pro plan starting at $0.99/month for unlimited transfers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which is faster, Airclap or LocalSend?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Airclap is over 200% faster than LocalSend in transfer speed. Airclap uses an optimized transfer protocol specifically engineered for maximum LAN throughput, while LocalSend uses a standard protocol."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use both Airclap and LocalSend?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely. Many users keep both installed. You might use Airclap for day-to-day transfers between your phone and computer for its speed and design, and keep LocalSend available for Linux machines or situations where you need a completely free option."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BEFVXFLED"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8BEFVXFLED');
+  </script>
+
+  <style>
+    :root {
+      --bg:          #060608;
+      --bg-surface:  #0c0c12;
+      --bg-card:     #111118;
+      --bg-card-hover: #16161f;
+      --border:      rgba(255,255,255,0.06);
+      --border-hover: rgba(255,255,255,0.12);
+      --text:        #ffffff;
+      --text-2:      rgba(255,255,255,0.6);
+      --text-3:      rgba(255,255,255,0.35);
+      --accent:      #8fff19;
+      --accent-dim:  rgba(143,255,25,0.12);
+      --accent-glow: rgba(143,255,25,0.08);
+      --radius:      16px;
+      --radius-sm:   10px;
+      --radius-xs:   6px;
+      --max-w:       1120px;
+      --max-w-narrow: 880px;
+      --font:        'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; height: auto; }
+
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
+    .container--narrow { max-width: var(--max-w-narrow); }
+
+    /* ===== NAV ===== */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 16px 0;
+      background: rgba(6,6,8,0.85);
+      backdrop-filter: blur(20px) saturate(1.2);
+      -webkit-backdrop-filter: blur(20px) saturate(1.2);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav__inner {
+      max-width: var(--max-w); margin: 0 auto; padding: 0 32px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav__logo {
+      display: flex; align-items: center; gap: 10px;
+      font-weight: 700; font-size: 18px; letter-spacing: -0.02em;
+    }
+    .nav__logo img { border-radius: 8px; }
+    .nav__back {
+      font-size: 14px; color: var(--text-2);
+      transition: color 0.2s;
+    }
+    .nav__back:hover { color: var(--accent); }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 140px 0 80px;
+      text-align: center;
+      position: relative;
+    }
+    .hero__badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: var(--accent-dim);
+      border: 1px solid rgba(143,255,25,0.15);
+      border-radius: 100px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--accent);
+      margin-bottom: 24px;
+      letter-spacing: 0.02em;
+    }
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .hero__sub {
+      font-size: 18px;
+      color: var(--text-2);
+      max-width: 640px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ===== VERDICT BOX ===== */
+    .verdict {
+      padding: 0 0 80px;
+    }
+    .verdict__card {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .verdict__card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    }
+    .verdict__title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 20px;
+    }
+    .verdict__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .verdict__item h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .verdict__item p {
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.6;
+    }
+    .verdict__item--airclap h3 { color: var(--accent); }
+    .verdict__item--localsend h3 { color: #60a5fa; }
+
+    /* ===== COMPARISON TABLE ===== */
+    .comparison {
+      padding: 0 0 100px;
+    }
+    .section-label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .table-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--bg-card);
+    }
+    .cmp-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .cmp-table thead th {
+      padding: 20px 24px;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+    .cmp-table thead th:first-child { color: var(--text-3); }
+    .cmp-table thead th:nth-child(2) { color: var(--accent); }
+    .cmp-table thead th:nth-child(3) { color: #60a5fa; }
+    .cmp-table tbody td {
+      padding: 16px 24px;
+      font-size: 14px;
+      color: var(--text-2);
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .cmp-table tbody tr:last-child td { border-bottom: none; }
+    .cmp-table tbody td:first-child {
+      font-weight: 600;
+      color: var(--text);
+      font-size: 14px;
+    }
+    .cmp-table .check {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .cmp-table .check-blue {
+      color: #60a5fa;
+      font-weight: 600;
+    }
+    .cmp-table .win {
+      background: rgba(143,255,25,0.04);
+    }
+    .cmp-table .win-blue {
+      background: rgba(96,165,250,0.04);
+    }
+
+    /* ===== WINS SECTIONS ===== */
+    .wins {
+      padding: 0 0 100px;
+    }
+    .wins__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .wins__card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: border-color 0.3s;
+    }
+    .wins__card:hover { border-color: var(--border-hover); }
+    .wins__card--green { border-top: 2px solid var(--accent); }
+    .wins__card--blue { border-top: 2px solid #60a5fa; }
+    .wins__icon {
+      width: 48px; height: 48px;
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+    .wins__icon--green { background: var(--accent-dim); }
+    .wins__icon--blue { background: rgba(96,165,250,0.12); }
+    .wins__card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: -0.01em;
+    }
+    .wins__card p {
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.65;
+    }
+
+    /* ===== WHO SECTION ===== */
+    .who {
+      padding: 0 0 100px;
+    }
+    .who__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .who__card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+    }
+    .who__card--airclap { border-top: 3px solid var(--accent); }
+    .who__card--localsend { border-top: 3px solid #60a5fa; }
+    .who__card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: -0.01em;
+    }
+    .who__card--airclap h3 { color: var(--accent); }
+    .who__card--localsend h3 { color: #60a5fa; }
+    .who__card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .who__card li {
+      font-size: 15px;
+      color: var(--text-2);
+      padding-left: 24px;
+      position: relative;
+      line-height: 1.5;
+    }
+    .who__card--airclap li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 7px;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .who__card--localsend li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 7px;
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #60a5fa;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      padding: 0 0 100px;
+      text-align: center;
+    }
+    .cta__box {
+      max-width: 700px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 60px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta__box::before {
+      content: '';
+      position: absolute;
+      top: -100px; left: 50%; transform: translateX(-50%);
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(143,255,25,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cta__icon {
+      width: 72px; height: 72px;
+      margin: 0 auto 24px;
+      border-radius: 18px;
+    }
+    .cta h2 {
+      font-size: clamp(24px, 3vw, 32px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .cta__sub {
+      font-size: 16px;
+      color: var(--text-2);
+      margin-bottom: 32px;
+    }
+    .cta__badges {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .cta__badges a {
+      display: block;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .cta__badges a:hover {
+      opacity: 0.85;
+      transform: translateY(-2px);
+    }
+    .cta__badges img {
+      height: 44px;
+      width: auto;
+    }
+    .cta__trust {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .cta__trust span {
+      font-size: 13px;
+      color: var(--text-3);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .cta__trust .dot {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--text-3);
+      display: inline-block;
+    }
+
+    /* ===== FAQ ===== */
+    .faq {
+      padding: 0 0 100px;
+    }
+    .faq__list {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .faq__item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+    .faq__q {
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 16px;
+      font-weight: 600;
+      text-align: left;
+      padding: 20px 24px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      transition: color 0.2s;
+    }
+    .faq__q:hover { color: var(--accent); }
+    .faq__q svg {
+      flex-shrink: 0;
+      transition: transform 0.3s;
+    }
+    .faq__item.open .faq__q svg {
+      transform: rotate(45deg);
+    }
+    .faq__a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .faq__item.open .faq__a {
+      max-height: 300px;
+    }
+    .faq__a p {
+      padding: 0 24px 20px;
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.7;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+    .footer p {
+      font-size: 13px;
+      color: var(--text-3);
+    }
+    .footer a {
+      color: var(--text-2);
+      transition: color 0.2s;
+    }
+    .footer a:hover { color: var(--accent); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .hero { padding: 120px 0 60px; }
+      .verdict__grid { grid-template-columns: 1fr; }
+      .verdict__card { padding: 28px; }
+      .who__grid { grid-template-columns: 1fr; }
+      .who__card { padding: 28px; }
+      .cta__box { padding: 40px 24px; }
+
+      .table-wrap { border-radius: var(--radius-sm); }
+      .cmp-table thead th { padding: 14px 16px; font-size: 12px; }
+      .cmp-table tbody td { padding: 12px 16px; font-size: 13px; }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 0 20px; }
+      .hero h1 { font-size: 28px; }
+      .hero__sub { font-size: 16px; }
+      .section-title { font-size: 24px; }
+      .cta__badges img { height: 38px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="../z-images/app-icon.webp" alt="Airclap" width="36" height="36">
+        <span>Airclap</span>
+      </a>
+      <a href="/" class="nav__back">&larr; Back to Home</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <span class="hero__badge">Honest Comparison &mdash; Updated 2026</span>
+      <h1>Airclap vs LocalSend:<br>Which File Transfer Tool Is Right for You?</h1>
+      <p class="hero__sub">Both apps solve the same problem &mdash; transferring files between devices on a local network, without the internet. They take very different approaches. Here is an honest breakdown to help you decide.</p>
+    </div>
+  </section>
+
+  <!-- Quick Verdict -->
+  <section class="verdict">
+    <div class="container">
+      <div class="verdict__card">
+        <div class="verdict__title">Quick Verdict</div>
+        <div class="verdict__grid">
+          <div class="verdict__item verdict__item--airclap">
+            <h3>Choose Airclap if&hellip;</h3>
+            <p>You value design, speed, and a consumer-grade experience. You want something that feels as polished as a first-party Apple or Google app, and you are happy to pay $0.99/month for unlimited transfers.</p>
+          </div>
+          <div class="verdict__item verdict__item--localsend">
+            <h3>Choose LocalSend if&hellip;</h3>
+            <p>You want completely free and open source. You need Linux support. You care about transparency and community-driven development, and a developer-oriented UI does not bother you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="comparison">
+    <div class="container">
+      <div class="section-label">Feature by Feature</div>
+      <h2 class="section-title">Detailed Comparison</h2>
+      <div class="table-wrap">
+        <table class="cmp-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Airclap</th>
+              <th>LocalSend</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Platforms</td>
+              <td>Mac, Windows, iOS, Android, <strong>Vision Pro</strong></td>
+              <td>Mac, Windows, <strong>Linux</strong>, iOS, Android</td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td>Free with limits. Pro from $0.99/mo</td>
+              <td class="win-blue"><span class="check-blue">Completely free</span></td>
+            </tr>
+            <tr>
+              <td>UI / Design</td>
+              <td class="win"><span class="check">Consumer-grade polish</span></td>
+              <td>Functional, developer aesthetic</td>
+            </tr>
+            <tr>
+              <td>Transfer Speed</td>
+              <td class="win"><span class="check">200% faster</span> (optimized protocol)</td>
+              <td>Standard</td>
+            </tr>
+            <tr>
+              <td>Open Source</td>
+              <td>No</td>
+              <td class="win-blue"><span class="check-blue">Yes</span> (MIT license)</td>
+            </tr>
+            <tr>
+              <td>Auto Discovery</td>
+              <td><span class="check">Yes</span></td>
+              <td><span class="check-blue">Yes</span></td>
+            </tr>
+            <tr>
+              <td>File Size Limit</td>
+              <td>Free: 100 MB cap. Pro: Unlimited</td>
+              <td class="win-blue"><span class="check-blue">Unlimited</span></td>
+            </tr>
+            <tr>
+              <td>Setup Required</td>
+              <td>Zero config</td>
+              <td>Zero config</td>
+            </tr>
+            <tr>
+              <td>Internet Required</td>
+              <td>No (LAN only)</td>
+              <td>No (LAN only)</td>
+            </tr>
+            <tr>
+              <td>Community</td>
+              <td>416 GitHub stars, <span class="check">#1 Product Hunt</span> (533 upvotes)</td>
+              <td><span class="check-blue">35k+ GitHub stars</span></td>
+            </tr>
+            <tr>
+              <td>App Store Rating</td>
+              <td class="win"><span class="check">5.0 stars</span></td>
+              <td>4.6 stars</td>
+            </tr>
+            <tr>
+              <td>Available In</td>
+              <td>120+ countries</td>
+              <td>Worldwide</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where Airclap Wins -->
+  <section class="wins">
+    <div class="container">
+      <div class="section-label">Airclap Strengths</div>
+      <h2 class="section-title">Where Airclap Wins</h2>
+      <div class="wins__grid">
+        <div class="wins__card wins__card--green">
+          <div class="wins__icon wins__icon--green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8fff19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          </div>
+          <h3>Design Quality</h3>
+          <p>Airclap is built with the same attention to detail you would expect from a first-party platform app. Smooth animations, intuitive drag-and-drop, clean typography. The kind of app you actually enjoy using, not just tolerate. LocalSend is functional, but it looks and feels like a developer tool.</p>
+        </div>
+        <div class="wins__card wins__card--green">
+          <div class="wins__icon wins__icon--green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8fff19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Transfer Speed</h3>
+          <p>Airclap uses a custom-optimized transfer protocol that achieves over 200% faster speeds compared to standard implementations. On a typical home WiFi network, this means large files arrive in seconds instead of minutes. If you transfer files frequently, this adds up fast.</p>
+        </div>
+        <div class="wins__card wins__card--green">
+          <div class="wins__icon wins__icon--green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8fff19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>Vision Pro Support</h3>
+          <p>Airclap is one of the few file transfer tools available on Apple Vision Pro. If you work in spatial computing, you can send files to and from your headset just like any other device. LocalSend does not support Vision Pro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where LocalSend Wins -->
+  <section class="wins">
+    <div class="container">
+      <div class="section-label">LocalSend Strengths</div>
+      <h2 class="section-title">Where LocalSend Wins</h2>
+      <div class="wins__grid">
+        <div class="wins__card wins__card--blue">
+          <div class="wins__icon wins__icon--blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          </div>
+          <h3>Completely Free</h3>
+          <p>LocalSend is free with no strings attached. No freemium limits, no subscription, no ads. You can transfer unlimited files of any size at no cost. Airclap's free tier has a 100 MB cap per file, and removing it requires a Pro subscription. If your budget is zero, LocalSend is the clear winner here.</p>
+        </div>
+        <div class="wins__card wins__card--blue">
+          <div class="wins__icon wins__icon--blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <h3>Open Source</h3>
+          <p>LocalSend is fully open source under the MIT license with over 35,000 GitHub stars. You can audit the code, contribute features, or fork it for your own needs. For users who care deeply about software transparency and community governance, this is a significant advantage Airclap cannot match.</p>
+        </div>
+        <div class="wins__card wins__card--blue">
+          <div class="wins__icon wins__icon--blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Linux Support</h3>
+          <p>If you run Linux, LocalSend is your option. It supports all major Linux distributions, while Airclap is not available on Linux. For developers, sysadmins, or anyone with a Linux machine in their workflow, this is a dealbreaker in LocalSend's favor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Should Choose What -->
+  <section class="who">
+    <div class="container">
+      <div class="section-label">The Decision</div>
+      <h2 class="section-title">Who Should Choose What</h2>
+      <div class="who__grid">
+        <div class="who__card who__card--airclap">
+          <h3>Airclap is for you if&hellip;</h3>
+          <ul>
+            <li>You want a beautiful, polished app that feels native on every platform</li>
+            <li>Transfer speed matters &mdash; you send large files regularly</li>
+            <li>You own an Apple Vision Pro and need file transfer support</li>
+            <li>You are willing to pay $0.99/month to remove the 100 MB free cap</li>
+            <li>You prefer a curated product experience over community-driven development</li>
+            <li>A 5.0-star App Store rating and Product Hunt #1 give you confidence</li>
+          </ul>
+        </div>
+        <div class="who__card who__card--localsend">
+          <h3>LocalSend is for you if&hellip;</h3>
+          <ul>
+            <li>You need a completely free tool with no limits whatsoever</li>
+            <li>Open source matters to you &mdash; you want to see the code</li>
+            <li>You have Linux machines in your device ecosystem</li>
+            <li>You prefer community-driven software with transparent governance</li>
+            <li>A developer-oriented UI does not bother you</li>
+            <li>You want an app backed by 35k+ GitHub stars of community trust</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__box">
+        <img src="../z-images/app-icon.webp" alt="Airclap" width="72" height="72" class="cta__icon">
+        <h2>Try Airclap Free</h2>
+        <p class="cta__sub">No account needed. Works in 30 seconds. See why users rate it 5.0 stars.</p>
+        <div class="cta__badges">
+          <a href="https://apps.apple.com/us/app/airclap/id6467128147" target="_blank" rel="noopener">
+            <img src="../public/badge-appstore.webp" alt="Download on the App Store" height="44">
+          </a>
+          <a href="https://apps.apple.com/us/app/airclap/id6467128147" target="_blank" rel="noopener">
+            <img src="../public/badge-mac.webp" alt="Download on the Mac App Store" height="44">
+          </a>
+          <a href="https://www.microsoft.com/store/productId/9N19C4QDKR6D" target="_blank" rel="noopener">
+            <img src="../public/badge-microsoft.webp" alt="Get it from Microsoft Store" height="44">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=tech.gentleflow.airclap.pro" target="_blank" rel="noopener">
+            <img src="../public/badge-googleplay.webp" alt="Get it on Google Play" height="44">
+          </a>
+        </div>
+        <div class="cta__trust">
+          <span>5.0 App Store Rating</span>
+          <span><span class="dot"></span></span>
+          <span>#1 Product Hunt</span>
+          <span><span class="dot"></span></span>
+          <span>120+ Countries</span>
+          <span><span class="dot"></span></span>
+          <span>Free to Try</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="section-label">Common Questions</div>
+      <h2 class="section-title">FAQ</h2>
+      <div class="faq__list">
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            Is Airclap better than LocalSend?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq__a">
+            <p>It depends on your priorities. Airclap offers a more polished user experience with faster transfer speeds (over 200% faster) and Vision Pro support. LocalSend is completely free and open source with Linux support. If you value design and speed, Airclap is the better choice. If you need free and open source, LocalSend is the better choice. Both are solid tools for local file transfer.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            Is LocalSend completely free?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq__a">
+            <p>Yes. LocalSend is 100% free and open source under the MIT license. There are no paid tiers, no ads, and no file size limits. Airclap has a free tier with a 100 MB file size cap, and a Pro plan starting at $0.99/month for unlimited transfers and additional features.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            Which is faster, Airclap or LocalSend?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq__a">
+            <p>Airclap is significantly faster. It uses a custom-optimized transfer protocol that achieves over 200% faster speeds compared to LocalSend's standard implementation. For occasional small file transfers, the difference may not matter much. For frequent or large file transfers, the speed advantage is noticeable and meaningful.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            Can I use both Airclap and LocalSend?
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq__a">
+            <p>Absolutely. Many users keep both installed. A common setup is to use Airclap for everyday transfers between phone and computer (for its speed and polish), and keep LocalSend available for Linux machines or situations where you need a completely free, no-limits option. They do not conflict with each other.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__links">
+        <a href="/">Home</a>
+        <a href="/alternatives/airdrop.html">AirDrop Alternative</a>
+        <a href="/privacy-policy.html">Privacy</a>
+        <a href="/terms-of-use.html">Terms</a>
+      </div>
+      <p>&copy; 2026 Airclap by Gentleflow</p>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq__q').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.parentElement;
+        var isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq__item').forEach(function(el) {
+          el.classList.remove('open');
+          el.querySelector('.faq__q').setAttribute('aria-expanded', 'false');
+        });
+        // Toggle current
+        if (!isOpen) {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
