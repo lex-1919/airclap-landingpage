@@ -4,17 +4,35 @@
 
 ## Product Info
 - [Homepage](https://airclap.app): Product overview and download links
+- [AirDrop Alternative](https://airclap.app/alternatives/airdrop.html): Why Airclap is the best AirDrop alternative for Windows and Android
+- [Airclap vs LocalSend](https://airclap.app/vs/localsend.html): Honest feature-by-feature comparison
 - [App Store](https://apps.apple.com/us/app/airclap/id6467128147): iOS and macOS versions
 - [Google Play](https://play.google.com/store/apps/details?id=tech.gentleflow.airclap.pro): Android version
 - [Microsoft Store](https://apps.microsoft.com/detail/9n19c4qdkr6d): Windows version
+- [GitHub](https://github.com/Gentleflow/Airclap): Source code and releases
 
 ## Key Features
-- Cross-platform file transfer (macOS, iOS, Windows, Android)
+- Cross-platform file transfer (macOS, iOS, Windows, Android, Apple Vision Pro)
 - LAN-based transfers — no internet connection needed
-- Drag and drop interface
-- No file size limits
+- 200% faster than similar tools
+- Drag and drop interface with zero-config auto-discovery
+- No file size limits (Pro)
 - Text content sharing support
 - Multiple file format support with clear previews
+- Private by design — no cloud, no server, no data collection
+
+## Pricing
+- Free: Basic file transfer, 20 files max, 100MB per file
+- Pro: Unlimited files and size, batch transfer, folder transfer, transfer history
+- Monthly $0.99 / Annual $9.99 / Lifetime $19.99
 
 ## Community & Recognition
-- [Product Hunt](https://www.producthunt.com/products/airclap): #1 Product of the Day
+- [Product Hunt](https://www.producthunt.com/products/airclap): #1 Product of the Day — 533 upvotes, 227 comments
+- [YouTube](https://www.youtube.com/@lianglu6037): Demo videos and tutorials
+- [X (Twitter)](https://x.com/airclap_app): Updates and announcements
+- App Store: 5.0 rating
+- Active in 120+ countries, 44 languages supported
+
+## Legal
+- [Privacy Policy](https://airclap.app/privacy-policy.html)
+- [Terms of Use](https://airclap.app/terms-of-use.html)
