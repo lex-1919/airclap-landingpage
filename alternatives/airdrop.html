@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best AirDrop Alternative for Windows & Android — Airclap</title>
+  <meta name="description" content="Looking for AirDrop on Windows or Android? Airclap transfers files between any device over WiFi — no internet, no cables, no cloud. Free.">
+
+  <meta property="og:title" content="Best AirDrop Alternative for Windows & Android — Airclap">
+  <meta property="og:description" content="Looking for AirDrop on Windows or Android? Airclap transfers files between any device over WiFi — no internet, no cables, no cloud. Free.">
+  <meta property="og:image" content="https://telegraph-image-b0a.pages.dev/file/fcf8b2939ca97ab1c03f5.jpg">
+  <meta property="og:url" content="https://airclap.app/alternatives/airdrop">
+  <meta property="og:site_name" content="Airclap">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Best AirDrop Alternative for Windows & Android — Airclap">
+  <meta name="twitter:description" content="Looking for AirDrop on Windows or Android? Airclap transfers files between any device over WiFi — no internet, no cables, no cloud. Free.">
+  <meta name="twitter:image" content="https://telegraph-image-b0a.pages.dev/file/fcf8b2939ca97ab1c03f5.jpg">
+
+  <link rel="shortcut icon" href="../public/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://airclap.app/alternatives/airdrop">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Airclap a free AirDrop alternative?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Airclap's core file transfer is completely free with no account required. You can send files between any combination of Mac, iPhone, Windows, and Android devices at no cost. A Pro upgrade is available for power users who want unlimited simultaneous transfers and advanced features."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Airclap work without internet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Airclap transfers files over your local WiFi network only. Your files never touch any server or cloud storage. This means transfers work in airplane mode, in offices without internet, or anywhere you have a WiFi router — even without an active internet connection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I transfer files from iPhone to Windows PC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Unlike AirDrop which only works between Apple devices, Airclap works across all platforms. Install Airclap on your iPhone and your Windows PC, connect both to the same WiFi network, and drag files to transfer. No cables, no iTunes, no iCloud workarounds needed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How fast is Airclap compared to AirDrop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Airclap is over 200% faster than most file transfer alternatives. It uses optimized LAN transfer protocols to maximize your local network speed. Large files that take minutes with cloud-based tools transfer in seconds with Airclap because data travels directly between devices without any server detour."
+          }
+        }
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Airclap",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": ["macOS", "iOS", "Windows", "Android"],
+      "description": "Cross-platform AirDrop alternative. Transfer files between Mac, iPhone, Windows, and Android over local WiFi. No internet required.",
+      "url": "https://airclap.app",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "downloadUrl": [
+        "https://apps.apple.com/us/app/airclap/id6467128147",
+        "https://play.google.com/store/apps/details?id=tech.gentleflow.airclap.pro",
+        "https://www.microsoft.com/store/productId/9N19C4QDKR6D"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "bestRating": "5",
+        "ratingCount": "100"
+      }
+    }
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BEFVXFLED"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8BEFVXFLED');
+  </script>
+
+  <style>
+    /* ===== Design Tokens ===== */
+    :root {
+      --bg:          #060608;
+      --bg-surface:  #0c0c12;
+      --bg-card:     #111118;
+      --bg-card-hover: #16161f;
+      --border:      rgba(255,255,255,0.06);
+      --border-hover: rgba(255,255,255,0.12);
+      --text:        #ffffff;
+      --text-2:      rgba(255,255,255,0.6);
+      --text-3:      rgba(255,255,255,0.35);
+      --accent:      #8fff19;
+      --accent-dim:  rgba(143,255,25,0.12);
+      --accent-glow: rgba(143,255,25,0.08);
+      --radius:      16px;
+      --radius-sm:   10px;
+      --radius-xs:   6px;
+      --max-w:       1120px;
+      --max-w-narrow: 880px;
+      --font:        'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    /* ===== Reset ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; height: auto; }
+
+    /* ===== Layout ===== */
+    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 32px; }
+    .container--narrow { max-width: var(--max-w-narrow); margin: 0 auto; padding: 0 32px; }
+
+    /* ===== Nav ===== */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      padding: 16px 0;
+      background: rgba(6,6,8,0.7);
+      backdrop-filter: blur(20px) saturate(1.2);
+      -webkit-backdrop-filter: blur(20px) saturate(1.2);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav__inner {
+      max-width: var(--max-w); margin: 0 auto; padding: 0 32px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav__logo {
+      display: flex; align-items: center; gap: 10px;
+      font-weight: 700; font-size: 18px; letter-spacing: -0.02em;
+    }
+    .nav__logo img { border-radius: 8px; }
+    .nav__right { display: flex; align-items: center; gap: 16px; }
+    .nav__link {
+      font-size: 14px; font-weight: 500; color: var(--text-2);
+      transition: color 0.2s;
+    }
+    .nav__link:hover { color: var(--text); }
+    .nav__cta {
+      padding: 8px 20px; border-radius: 100px;
+      font-size: 14px; font-weight: 600;
+      background: var(--text); color: var(--bg);
+      transition: opacity 0.2s;
+    }
+    .nav__cta:hover { opacity: 0.85; }
+
+    /* ===== Section Shared ===== */
+    section { position: relative; z-index: 1; }
+    .section-label {
+      display: inline-block;
+      font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 17px;
+      color: var(--text-2);
+      line-height: 1.7;
+      max-width: 640px;
+    }
+    .text-center { text-align: center; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+
+    /* ===== Hero ===== */
+    .hero {
+      padding: 160px 0 100px;
+      text-align: center;
+    }
+    .hero__icon {
+      width: 80px; height: 80px;
+      border-radius: 20px;
+      margin: 0 auto 32px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+    .hero__title {
+      font-size: clamp(36px, 5.5vw, 64px);
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .hero__title .accent { color: var(--accent); }
+    .hero__sub {
+      font-size: 19px;
+      color: var(--text-2);
+      line-height: 1.7;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+    .hero__cta {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 14px 32px; border-radius: 100px;
+      font-size: 16px; font-weight: 700;
+      background: var(--accent); color: #000;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .hero__cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 24px rgba(143,255,25,0.25);
+    }
+    .hero__cta svg { flex-shrink: 0; }
+    .hero__hint {
+      display: block;
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--text-3);
+    }
+
+    /* ===== Problem ===== */
+    .problem {
+      padding: 100px 0;
+    }
+    .problem__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+    .problem__card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+    }
+    .problem__card-icon {
+      font-size: 32px;
+      margin-bottom: 16px;
+    }
+    .problem__card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+    .problem__card p {
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.65;
+    }
+
+    /* ===== Comparison Table ===== */
+    .comparison {
+      padding: 100px 0;
+    }
+    .table-wrap {
+      margin-top: 48px;
+      overflow-x: auto;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+    .compare-table thead th {
+      padding: 20px 24px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 16px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-surface);
+    }
+    .compare-table thead th:first-child {
+      color: var(--text-2);
+      font-weight: 600;
+    }
+    .compare-table thead th.highlight {
+      color: var(--accent);
+    }
+    .compare-table tbody td {
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-2);
+    }
+    .compare-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+    .compare-table tbody td:first-child {
+      font-weight: 600;
+      color: var(--text);
+    }
+    .compare-table tbody td.highlight {
+      color: var(--text);
+    }
+    .check {
+      color: var(--accent);
+      font-weight: 700;
+    }
+    .cross {
+      color: rgba(255,255,255,0.2);
+    }
+
+    /* ===== Benefits ===== */
+    .benefits {
+      padding: 100px 0;
+    }
+    .benefits__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+    .benefit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+      transition: border-color 0.2s;
+    }
+    .benefit-card:hover {
+      border-color: var(--border-hover);
+    }
+    .benefit-card__icon {
+      width: 48px; height: 48px;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--accent-dim);
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .benefit-card__icon svg {
+      width: 24px; height: 24px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .benefit-card h3 {
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+    .benefit-card p {
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.65;
+    }
+
+    /* ===== Social Proof / Trust ===== */
+    .trust {
+      padding: 80px 0;
+    }
+    .trust__strip {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+    .trust__item {
+      text-align: center;
+    }
+    .trust__number {
+      display: block;
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--accent);
+    }
+    .trust__label {
+      display: block;
+      margin-top: 4px;
+      font-size: 14px;
+      color: var(--text-3);
+      font-weight: 500;
+    }
+
+    /* ===== Download CTA ===== */
+    .download {
+      padding: 100px 0;
+    }
+    .download__box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 64px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .download__box::before {
+      content: '';
+      position: absolute;
+      top: -120px; left: 50%; transform: translateX(-50%);
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(143,255,25,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .download__title {
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+      position: relative;
+    }
+    .download__sub {
+      font-size: 16px;
+      color: var(--text-2);
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .download__badges {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      position: relative;
+    }
+    .download__badges a {
+      display: block;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .download__badges a:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+    .download__badges img {
+      height: 52px;
+      width: auto;
+    }
+    .download__trust {
+      margin-top: 24px;
+      font-size: 13px;
+      color: var(--text-3);
+      position: relative;
+    }
+
+    /* ===== FAQ ===== */
+    .faq {
+      padding: 100px 0;
+    }
+    .faq__list {
+      margin-top: 48px;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .faq__item {
+      border-bottom: 1px solid var(--border);
+    }
+    .faq__question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-family: var(--font);
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text);
+      text-align: left;
+      gap: 16px;
+    }
+    .faq__question:hover { color: var(--accent); }
+    .faq__chevron {
+      flex-shrink: 0;
+      width: 20px; height: 20px;
+      stroke: var(--text-3);
+      transition: transform 0.3s;
+    }
+    .faq__item.open .faq__chevron {
+      transform: rotate(180deg);
+    }
+    .faq__answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+    .faq__answer-inner {
+      padding: 0 0 24px;
+      font-size: 15px;
+      color: var(--text-2);
+      line-height: 1.75;
+    }
+    .faq__item.open .faq__answer {
+      max-height: 300px;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      padding: 48px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-3);
+    }
+    .footer a {
+      color: var(--text-2);
+      transition: color 0.2s;
+    }
+    .footer a:hover { color: var(--text); }
+    .footer__links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 16px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .hero { padding: 130px 0 80px; }
+      .hero__title { font-size: clamp(30px, 8vw, 44px); }
+      .hero__sub { font-size: 16px; }
+
+      .problem__grid { grid-template-columns: 1fr; }
+      .benefits__grid { grid-template-columns: 1fr; }
+
+      .compare-table { font-size: 14px; }
+      .compare-table thead th,
+      .compare-table tbody td { padding: 12px 16px; }
+
+      .trust__strip { gap: 32px; }
+      .trust__number { font-size: 28px; }
+
+      .download__box { padding: 48px 24px; }
+      .download__badges img { height: 44px; }
+
+      .container { padding: 0 20px; }
+      .nav__inner { padding: 0 20px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero__title { font-size: 28px; }
+      .trust__strip { flex-direction: column; gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <img src="../z-images/app-icon.webp" alt="Airclap" width="36" height="36">
+        <span>Airclap</span>
+      </a>
+      <div class="nav__right">
+        <a href="/" class="nav__link">&larr; Home</a>
+        <a href="#download" class="nav__cta">Download Free</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container--narrow" style="margin:0 auto; padding:0 32px;">
+      <img src="../z-images/app-icon.webp" alt="Airclap icon" class="hero__icon">
+      <h1 class="hero__title">The AirDrop That Works<br>on <span class="accent">Everything</span></h1>
+      <p class="hero__sub">
+        Airclap sends files between Mac, iPhone, Windows, and Android over local WiFi. No internet. No cables. No cloud. No account. Just drag and drop.
+      </p>
+      <a href="#download" class="hero__cta">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download Free
+      </a>
+      <span class="hero__hint">Free &middot; No account needed &middot; Works in 30 seconds</span>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="problem">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">The Problem</span>
+        <h2 class="section-title">AirDrop has one fatal flaw</h2>
+        <p class="section-sub mx-auto">
+          It only works between Apple devices. The moment you need to send a file to a Windows laptop or an Android phone, you're stuck.
+        </p>
+      </div>
+      <div class="problem__grid">
+        <div class="problem__card">
+          <div class="problem__card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--text-3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3>Apple-only ecosystem</h3>
+          <p>AirDrop requires both sender and receiver to be on Apple hardware. Own a single Windows or Android device? You're locked out.</p>
+        </div>
+        <div class="problem__card">
+          <div class="problem__card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--text-3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+          </div>
+          <h3>Cloud workarounds are slow</h3>
+          <p>Uploading to Google Drive, emailing yourself, or using WeTransfer means waiting for uploads, downloads, and file size limits. Your files leave your network.</p>
+        </div>
+        <div class="problem__card">
+          <div class="problem__card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--text-3)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Cables and configs</h3>
+          <p>USB cables need adapters. Bluetooth is painfully slow. Setting up SMB shares takes 15 minutes. You just want to move a file, not debug a protocol.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section class="comparison">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Side by Side</span>
+        <h2 class="section-title">AirDrop vs Airclap</h2>
+        <p class="section-sub mx-auto">
+          A direct comparison of what each tool actually delivers.
+        </p>
+      </div>
+      <div class="table-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>AirDrop</th>
+              <th class="highlight">Airclap</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>macOS</td>
+              <td><span class="check">&#10003;</span></td>
+              <td class="highlight"><span class="check">&#10003;</span></td>
+            </tr>
+            <tr>
+              <td>iOS / iPadOS</td>
+              <td><span class="check">&#10003;</span></td>
+              <td class="highlight"><span class="check">&#10003;</span></td>
+            </tr>
+            <tr>
+              <td>Windows</td>
+              <td><span class="cross">&#10005;</span></td>
+              <td class="highlight"><span class="check">&#10003;</span></td>
+            </tr>
+            <tr>
+              <td>Android</td>
+              <td><span class="cross">&#10005;</span></td>
+              <td class="highlight"><span class="check">&#10003;</span></td>
+            </tr>
+            <tr>
+              <td>Vision Pro</td>
+              <td><span class="check">&#10003;</span></td>
+              <td class="highlight"><span class="check">&#10003;</span></td>
+            </tr>
+            <tr>
+              <td>Cross-platform transfers</td>
+              <td><span class="cross">&#10005;</span> Apple-to-Apple only</td>
+              <td class="highlight"><span class="check">&#10003;</span> Any-to-any</td>
+            </tr>
+            <tr>
+              <td>Internet required</td>
+              <td>No</td>
+              <td class="highlight">No</td>
+            </tr>
+            <tr>
+              <td>Setup needed</td>
+              <td>Enable via Control Center</td>
+              <td class="highlight">Install and go — zero config</td>
+            </tr>
+            <tr>
+              <td>File size limit</td>
+              <td>None</td>
+              <td class="highlight">None</td>
+            </tr>
+            <tr>
+              <td>Transfer speed</td>
+              <td>Fast (Apple devices)</td>
+              <td class="highlight">200%+ faster than alternatives</td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td>Free (Apple hardware required)</td>
+              <td class="highlight">Free</td>
+            </tr>
+            <tr>
+              <td>Privacy</td>
+              <td>Local transfer</td>
+              <td class="highlight">Local transfer — zero data collection</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="benefits">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Why Airclap</span>
+        <h2 class="section-title">Built for how people actually work</h2>
+        <p class="section-sub mx-auto">
+          Most people use more than one ecosystem. Airclap is the file transfer tool that respects that reality.
+        </p>
+      </div>
+      <div class="benefits__grid">
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Works on every platform</h3>
+          <p>Mac, iPhone, iPad, Windows, Android, Vision Pro. Send files between any combination. iPhone to Windows PC, Android to Mac, anything to anything.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/><line x1="15" y1="15" x2="9" y2="15"/></svg>
+          </div>
+          <h3>No internet, no cloud, no servers</h3>
+          <p>Files travel directly between your devices over local WiFi. Nothing is uploaded anywhere. Works in airplane mode, in offices with restricted internet, everywhere.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>200% faster than alternatives</h3>
+          <p>Optimized LAN transfer protocol. No cloud detour means no upload wait, no download wait. Large files arrive in seconds, not minutes.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <h3>Private by design</h3>
+          <p>Zero data collection. No accounts. No tracking. Your files never leave your local network. End-to-end privacy without trusting a third-party server.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Strip -->
+  <section class="trust">
+    <div class="container">
+      <div class="trust__strip">
+        <div class="trust__item">
+          <span class="trust__number">5.0</span>
+          <span class="trust__label">App Store Rating</span>
+        </div>
+        <div class="trust__item">
+          <span class="trust__number">#1</span>
+          <span class="trust__label">Product Hunt — 533 upvotes</span>
+        </div>
+        <div class="trust__item">
+          <span class="trust__number">120+</span>
+          <span class="trust__label">Countries</span>
+        </div>
+        <div class="trust__item">
+          <span class="trust__number">4</span>
+          <span class="trust__label">Platforms supported</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download CTA -->
+  <section class="download" id="download">
+    <div class="container">
+      <div class="download__box">
+        <h2 class="download__title">Transfer files between any device, right now</h2>
+        <p class="download__sub">Install on two devices, connect to the same WiFi, and drag to send. That's it.</p>
+        <div class="download__badges">
+          <a href="https://apps.apple.com/us/app/airclap/id6467128147" target="_blank" rel="noopener">
+            <img src="../public/badge-appstore.webp" alt="Download on the App Store" loading="lazy">
+          </a>
+          <a href="https://apps.apple.com/us/app/airclap/id6467128147" target="_blank" rel="noopener">
+            <img src="../public/badge-mac.webp" alt="Download for Mac" loading="lazy">
+          </a>
+          <a href="https://www.microsoft.com/store/productId/9N19C4QDKR6D" target="_blank" rel="noopener">
+            <img src="../public/badge-microsoft.webp" alt="Get it from Microsoft Store" loading="lazy">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=tech.gentleflow.airclap.pro" target="_blank" rel="noopener">
+            <img src="../public/badge-googleplay.webp" alt="Get it on Google Play" loading="lazy">
+          </a>
+        </div>
+        <p class="download__trust">Free &middot; No account required &middot; No file size limits &middot; Works offline</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Common questions</h2>
+      </div>
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Is Airclap a free AirDrop alternative?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              Yes. Core file transfer is completely free with no account required. You can send files between any combination of Mac, iPhone, Windows, and Android devices at no cost. A Pro upgrade is available for power users who want unlimited simultaneous transfers and advanced features.
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Does Airclap work without internet?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              Yes. Airclap transfers files over your local WiFi network only. Your files never touch any server or cloud storage. This means transfers work in airplane mode, in offices without internet, or anywhere you have a WiFi router — even without an active internet connection.
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Can I transfer files from iPhone to Windows PC?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              Yes. Unlike AirDrop which only works between Apple devices, Airclap works across all platforms. Install Airclap on your iPhone and your Windows PC, connect both to the same WiFi network, and drag files to transfer. No cables, no iTunes, no iCloud workarounds needed.
+            </div>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>How fast is Airclap compared to AirDrop?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer">
+            <div class="faq__answer-inner">
+              Airclap is over 200% faster than most file transfer alternatives. It uses optimized LAN transfer protocols to maximize your local network speed. Large files that take minutes with cloud-based tools transfer in seconds with Airclap because data travels directly between devices without any server detour.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__links">
+        <a href="/">Home</a>
+        <a href="/vs/localsend.html">Airclap vs LocalSend</a>
+        <a href="/privacy-policy.html">Privacy</a>
+        <a href="/terms-of-use.html">Terms</a>
+      </div>
+      <p>&copy; 2026 Airclap by Gentleflow</p>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq__question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq__item').forEach(i => i.classList.remove('open'));
+        document.querySelectorAll('.faq__question').forEach(b => b.setAttribute('aria-expanded', 'false'));
+        // Toggle current
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
